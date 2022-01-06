@@ -1,21 +1,20 @@
-import AboutMe from "parts/AboutMe";
-import Header from "parts/Header";
-import Hero from "parts/Hero";
-import Skills from "parts/Skills";
 import "./assets/scss/style.scss";
 import "./assets/js/script";
-import Portfolio from "parts/Portfolio";
-import Footer from "parts/Footer";
+import HomePage from "pages/HomePage";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import AboutPage from "pages/AboutPage";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <AboutMe />
-      <Skills />
-      <Portfolio />
-      <Footer />
+      <BrowserRouter>
+        <div>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/about" component={AboutPage} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }

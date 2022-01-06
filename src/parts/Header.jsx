@@ -1,5 +1,6 @@
 import React from "react";
 import profileImage from "assets/img/IMG_3528.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -8,20 +9,20 @@ export default function Header() {
         <div className="collapse navbar-collapse nav_menu" id="nav_menu">
           <div className="row">
             <div className="col-4 col-lg-auto">
-              <a
-                href="index.html"
+              <Link
+                to="/"
                 className="nav-item nav-link d-flex flex-column align-items-center btn-navbar active"
               >
                 <i className="uil uil-estate"></i>Home
-              </a>
+              </Link>
             </div>
             <div className="col-4 col-lg-auto">
-              <a
-                href="about.html"
+              <Link
+                to="/about"
                 className="nav-item nav-link d-flex flex-column align-items-center btn-navbar"
               >
                 <i className="uil uil-user"></i>About
-              </a>
+              </Link>
             </div>
             <div className="col-4 col-lg-auto">
               <a

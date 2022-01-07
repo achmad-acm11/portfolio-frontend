@@ -25,28 +25,28 @@ export default function Header() {
               </Link>
             </div>
             <div className="col-4 col-lg-auto">
-              <a
-                href="qualification.html"
+              <Link
+                to="/qualification"
                 className="nav-item nav-link d-flex flex-column align-items-center btn-navbar"
               >
                 <i className="uil uil-briefcase-alt"></i>Qualification
-              </a>
+              </Link>
             </div>
             <div className="col-4 col-lg-auto">
-              <a
-                href="skills.html"
+              <Link
+                to="/skills"
                 className="nav-item nav-link d-flex flex-column align-items-center btn-navbar"
               >
                 <i className="uil uil-file-alt"></i>Skills
-              </a>
+              </Link>
             </div>
             <div className="col-4 col-lg-auto">
-              <a
-                href="portfolio.html"
+              <Link
+                to="/portfolio"
                 className="nav-item nav-link d-flex flex-column align-items-center btn-navbar"
               >
                 <i className="uil uil-scenery"></i>Portfolio
-              </a>
+              </Link>
             </div>
             <div className="col-4 col-lg-auto">
               <a

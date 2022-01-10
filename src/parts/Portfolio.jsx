@@ -1,17 +1,16 @@
 import React from "react";
-import itemProject1 from "assets/img/Group 6.png";
-import itemProject2 from "assets/img/Group 7.png";
+import { Link } from "react-router-dom";
 
-export default function Portfolio() {
+export default function Portfolio({ study_case, project }) {
   return (
     <section className="portfolio mt-5" id="portfolio">
       <div className="container">
         <div className="card bg-transparent">
           <div className="card-header">
             <h5 className="text-uppercase m-0">Portfolio</h5>
-            <a href="portfolio.html" className="m-0 text-secondary">
+            <Link to="/portfolio" className="m-0 text-secondary">
               View All
-            </a>
+            </Link>
           </div>
           <div className="card-body">
             <div className="row">
@@ -65,58 +64,29 @@ export default function Portfolio() {
                       data-bs-ride="carousel"
                       data-bs-interval="false"
                     >
-                      <div
-                        className="carousel-indicators"
-                        style={{ bottom: "-60px" }}
-                      >
-                        <button
-                          type="button"
-                          data-bs-target="#carouselProject"
-                          data-bs-slide-to="0"
-                          className="active"
-                          aria-current="true"
-                          aria-label="Slide 1"
-                        ></button>
-                        <button
-                          type="button"
-                          data-bs-target="#carouselProject"
-                          data-bs-slide-to="1"
-                          aria-label="Slide 2"
-                        ></button>
-                      </div>
                       <div className="carousel-inner">
                         <div className="carousel-item active">
                           <div className="row">
-                            <div className="col-12 to-project-detail">
-                              <div className="image-wrapper text-center">
-                                <img src={itemProject1} alt="" />
-                              </div>
-                              <div className="project-text text-center">
-                                Staycation
-                              </div>
-                              <div className="label-wrapper text-center">
-                                <div className="project-label badge rounded-pill">
-                                  Project
+                            {project.map((item, index) => {
+                              return (
+                                <div
+                                  key={item.id}
+                                  className="col-12 to-project-detail"
+                                >
+                                  <div className="image-wrapper text-center">
+                                    <img src={item.main_image} alt="" />
+                                  </div>
+                                  <div className="project-text text-center">
+                                    {item.name}
+                                  </div>
+                                  <div className="label-wrapper text-center">
+                                    <div className="project-label badge rounded-pill">
+                                      Project
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="carousel-item">
-                          <div className="row">
-                            <div className="col-12 to-project-detail">
-                              <div className="image-wrapper text-center">
-                                <img src={itemProject2} alt="" />
-                              </div>
-                              <div className="project-text text-center">
-                                Staycation
-                              </div>
-                              <div className="label-wrapper text-center">
-                                <div className="project-label badge rounded-pill">
-                                  Project
-                                </div>
-                              </div>
-                            </div>
+                              );
+                            })}
                           </div>
                         </div>
                       </div>
@@ -158,58 +128,29 @@ export default function Portfolio() {
                       data-bs-ride="carousel"
                       data-bs-interval="false"
                     >
-                      <div
-                        className="carousel-indicators"
-                        style={{ bottom: "-60px" }}
-                      >
-                        <button
-                          type="button"
-                          data-bs-target="#carouselStudyCase"
-                          data-bs-slide-to="0"
-                          className="active"
-                          aria-current="true"
-                          aria-label="Slide 1"
-                        ></button>
-                        <button
-                          type="button"
-                          data-bs-target="#carouselStudyCase"
-                          data-bs-slide-to="1"
-                          aria-label="Slide 2"
-                        ></button>
-                      </div>
                       <div className="carousel-inner">
                         <div className="carousel-item active">
                           <div className="row">
-                            <div className="col-12 to-project-detail">
-                              <div className="image-wrapper text-center">
-                                <img src={itemProject1} alt="" />
-                              </div>
-                              <div className="study-case-text text-center">
-                                Staycation
-                              </div>
-                              <div className="label-wrapper text-center">
-                                <div className="study-case-label badge rounded-pill">
-                                  Study Case
+                            {study_case.map((item, index) => {
+                              return (
+                                <div
+                                  key={item.id}
+                                  className="col-6 to-project-detail"
+                                >
+                                  <div className="image-wrapper text-center">
+                                    <img src={item.main_image} alt="" />
+                                  </div>
+                                  <div className="study-case-text text-center">
+                                    {item.name}
+                                  </div>
+                                  <div className="label-wrapper text-center">
+                                    <div className="study-case-label badge rounded-pill">
+                                      Study Case
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="carousel-item">
-                          <div className="row">
-                            <div className="col-12 to-project-detail">
-                              <div className="image-wrapper text-center">
-                                <img src={itemProject2} alt="" />
-                              </div>
-                              <div className="study-case-text text-center">
-                                Staycation
-                              </div>
-                              <div className="label-wrapper text-center">
-                                <div className="study-case-label badge rounded-pill">
-                                  Study Case
-                                </div>
-                              </div>
-                            </div>
+                              );
+                            })}
                           </div>
                         </div>
                       </div>

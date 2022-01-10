@@ -1,8 +1,12 @@
-import React from "react";
-import profileImage from "assets/img/IMG_3528.png";
+import React, { useState } from "react";
+// import profileImage from "assets/img/IMG_3528.png";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header(props) {
+  const [classNav] = useState(
+    "nav-item nav-link d-flex flex-column align-items-center btn-navbar"
+  );
+
   return (
     <nav className="navbar navbar-expand-lg position-fixed bottom-0 start-0 w-100 navbar-dark">
       <div className="container flex-row-reverse flex-lg-row">
@@ -11,7 +15,9 @@ export default function Header() {
             <div className="col-4 col-lg-auto">
               <Link
                 to="/"
-                className="nav-item nav-link d-flex flex-column align-items-center btn-navbar active"
+                className={`${classNav} ${
+                  props.match.path === "/" ? "active" : ""
+                }`}
               >
                 <i className="uil uil-estate"></i>Home
               </Link>
@@ -19,7 +25,9 @@ export default function Header() {
             <div className="col-4 col-lg-auto">
               <Link
                 to="/about"
-                className="nav-item nav-link d-flex flex-column align-items-center btn-navbar"
+                className={`${classNav} ${
+                  props.match.path === "/about" ? "active" : ""
+                }`}
               >
                 <i className="uil uil-user"></i>About
               </Link>
@@ -27,7 +35,9 @@ export default function Header() {
             <div className="col-4 col-lg-auto">
               <Link
                 to="/qualification"
-                className="nav-item nav-link d-flex flex-column align-items-center btn-navbar"
+                className={`${classNav} ${
+                  props.match.path === "/qualification" ? "active" : ""
+                }`}
               >
                 <i className="uil uil-briefcase-alt"></i>Qualification
               </Link>
@@ -35,7 +45,9 @@ export default function Header() {
             <div className="col-4 col-lg-auto">
               <Link
                 to="/skills"
-                className="nav-item nav-link d-flex flex-column align-items-center btn-navbar"
+                className={`${classNav} ${
+                  props.match.path === "/skills" ? "active" : ""
+                }`}
               >
                 <i className="uil uil-file-alt"></i>Skills
               </Link>
@@ -43,7 +55,9 @@ export default function Header() {
             <div className="col-4 col-lg-auto">
               <Link
                 to="/portfolio"
-                className="nav-item nav-link d-flex flex-column align-items-center btn-navbar"
+                className={`${classNav} ${
+                  props.match.path === "/portfolio" ? "active" : ""
+                }`}
               >
                 <i className="uil uil-scenery"></i>Portfolio
               </Link>
@@ -51,7 +65,9 @@ export default function Header() {
             <div className="col-4 col-lg-auto">
               <a
                 href="#contact"
-                className="nav-item nav-link d-flex flex-column align-items-center btn-navbar"
+                className={`${classNav} ${
+                  props.match.path === "/contact" ? "active" : ""
+                }`}
               >
                 <i className="uil uil-message"></i>Contact
               </a>
@@ -71,13 +87,13 @@ export default function Header() {
         </button>
 
         {/* Navbar Brand for Mobile */}
-        <a className="navbar-brand n-mobile text-brand" href="/">
-          Achmad M
-        </a>
+        <Link className="navbar-brand n-mobile text-brand" to="/about">
+          {props.profile.short_name}
+        </Link>
 
         {/* Navbar Brand for Desktop */}
-        <a
-          href="/"
+        <Link
+          to="/about"
           className="navbar-brand n-desktop d-flex justify-content-between align-items-center"
         >
           <div
@@ -85,18 +101,18 @@ export default function Header() {
             style={{ width: "40px", height: "40px" }}
           >
             <img
-              src={profileImage}
-              alt=""
+              src={props.profile.image}
+              alt={classNav}
               className="navbar-brand-img"
               width="130"
               height="86"
             />
           </div>
           <div className="brand-text">
-            <p className="brand-name m-0">Achmad M</p>
-            <p className="brand-occupation m-0">Web Developer</p>
+            <p className="brand-name m-0">{props.profile.short_name}</p>
+            <p className="brand-occupation m-0">{props.profile.occupation}</p>
           </div>
-        </a>
+        </Link>
       </div>
     </nav>
   );

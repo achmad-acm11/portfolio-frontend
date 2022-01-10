@@ -2,7 +2,7 @@ import React from "react";
 import frontEnd from "assets/img/frontend.png";
 import profileImage from "assets/img/image_profile.png";
 
-export default function AboutMe() {
+export default function AboutMe(props) {
   return (
     <section className="about-me mt-5" id="about_me">
       <div className="container">
@@ -40,31 +40,31 @@ export default function AboutMe() {
               <table className="table table-borderless">
                 <tr>
                   <th className="text-start">Full Name :</th>
-                  <td className="text-end">Achmad Mauliddin</td>
+                  <td className="text-end">{props.profile.name}</td>
                 </tr>
                 <tr>
                   <th className="text-start">Gender :</th>
-                  <td className="text-end">Male</td>
+                  <td className="text-end">{props.profile.gender}</td>
                 </tr>
                 <tr>
                   <th className="text-start">Address :</th>
-                  <td className="text-end">Bogor</td>
+                  <td className="text-end">{props.profile.address}</td>
                 </tr>
                 <tr>
                   <th className="text-start">Nationality :</th>
-                  <td className="text-end">Indonesia</td>
+                  <td className="text-end">{props.profile.nationality}</td>
                 </tr>
                 <tr>
                   <th className="text-start">Religion :</th>
-                  <td className="text-end">Muslim</td>
+                  <td className="text-end">{props.profile.religion}</td>
                 </tr>
                 <tr>
                   <th className="text-start">Occupation :</th>
-                  <td className="text-end">Programmer, Web Developer</td>
+                  <td className="text-end">{props.profile.occupation_main}, {props.profile.occupation}</td>
                 </tr>
                 <tr>
                   <th className="text-start">Email :</th>
-                  <td className="text-end">achmadmauliddin2@gmail.com</td>
+                  <td className="text-end">{props.profile.email}</td>
                 </tr>
               </table>
             </div>

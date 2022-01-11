@@ -2,6 +2,7 @@ import Footer from "parts/Footer";
 import Header from "parts/Header";
 import Hero from "parts/Hero";
 import PortfolioDetail from "parts/PortfolioPage/PortfolioDetail";
+import PortfolioDetailDesc from "parts/PortfolioPage/PortfolioDetailDesc";
 import React, { Component } from "react";
 import APIProfile from "services/Profile";
 import APIProject from "services/Project";
@@ -14,6 +15,8 @@ export default class PortfolioPage extends Component {
     social: {},
     project: [],
     study_case: [],
+    detail: {},
+    param_id: this.props.match.params.id,
   };
   componentDidMount() {
     document.title = "Achmad Mauliddin - Portfolio";
@@ -21,10 +24,28 @@ export default class PortfolioPage extends Component {
     this.socialData();
     this.studyCase();
     this.project();
+    if (this.props.match.params.id === undefined) {
+    } else {
+      (async () => {
+        try {
+          const project = await APIProject.getDetailProject(
+            this.props.match.params.id
+          );
+          this.setState({
+            ...this.state,
+            detail: project,
+          });
+        } catch (error) {
+          this.props.history.push("/");
+          console.log(error);
+        }
+      })();
+    }
   }
   profileData = async () => {
     const profile = await APIProfile.getProfile();
     this.setState({
+      ...this.state,
       profile: profile[0],
     });
   };
@@ -54,7 +75,16 @@ export default class PortfolioPage extends Component {
       <>
         <Header {...this.props} profile={this.state.profile} />
         <Hero profile={this.state.profile} social={this.state.social} />
-        <PortfolioDetail study_case={this.state.study_case} project={this.state.project}/>
+        {this.state.param_id === undefined && (
+          <PortfolioDetail
+            {...this.props}
+            study_case={this.state.study_case}
+            project={this.state.project}
+          />
+        )}
+        {this.state.param_id !== undefined && (
+          <PortfolioDetailDesc detail={this.state.detail} />
+        )}
         <Footer />
       </>
     );

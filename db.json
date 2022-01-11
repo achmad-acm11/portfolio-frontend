@@ -203,7 +203,50 @@
         "id": 1,
         "name": "Qonstanta",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus esse magnam quos necessitatibus cumque vero veritatis ad consequuntur! Sapiente, quam temporibus? Dignissimos tempore, commodi quos blanditiis dolorum sapiente aperiam quaerat.",
-        "main_image": "http://localhost:3000/img/main_qonstanta.png"
+        "main_image": "http://localhost:3000/img/main_qonstanta.png",
+        "client": "PT. Rynest Technology Indomedia",
+        "long_time": "August 2020 - January 2021",
+        "platform": "Web",
+        "stacks":[
+          {
+            "id": 1,
+            "name": "HTML",
+            "image": "http://localhost:3000/img/Logo_html.png"
+          },
+          {
+            "id": 2,
+            "name": "CSS",
+            "image": "http://localhost:3000/img/Logo_css.png"
+          },
+          {
+            "id": 3,
+            "name": "Javascript",
+            "image": "http://localhost:3000/img/Logo_javascript.png"
+          },
+          {
+            "id": 4,
+            "name": "PHP",
+            "image": "http://localhost:3000/img/Logo_PHP.png"
+          }
+        ],
+        "images": [
+          {
+            "id":1,
+            "image": "http://localhost:3000/img/qonstanta1.png"
+          },
+          {
+            "id":2,
+            "image": "http://localhost:3000/img/qonstanta2.png"
+          },
+          {
+            "id":3,
+            "image": "http://localhost:3000/img/qonstanta3.png"
+          },
+          {
+            "id":4,
+            "image": "http://localhost:3000/img/qonstanta4.png"
+          }
+        ]
       }
     ]
 }

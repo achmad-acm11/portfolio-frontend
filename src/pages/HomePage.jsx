@@ -77,6 +77,7 @@ export default class HomePage extends Component {
         <AboutMe />
         <Skills qualification={this.state.qualification} />
         <Portfolio
+          {...this.props}
           project={this.state.project}
           study_case={this.state.study_case}
         />

@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Portfolio({ study_case, project }) {
+export default function Portfolio(props) {
+  const { study_case, project } = props
   return (
     <section className="portfolio mt-5" id="portfolio">
       <div className="container">
@@ -72,6 +73,9 @@ export default function Portfolio({ study_case, project }) {
                                 <div
                                   key={item.id}
                                   className="col-12 to-project-detail"
+                                  onClick={() => {
+                                    props.history.push(`/project/${item.id}`);
+                                  }}
                                 >
                                   <div className="image-wrapper text-center">
                                     <img src={item.main_image} alt="" />

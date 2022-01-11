@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function PortfolioDetail({ study_case, project }) {
+export default function PortfolioDetail(props) {
+  const { study_case, project } = props;
   return (
     <section className="portfolio-list mt-5" id="portfolio_list">
       <div className="container">

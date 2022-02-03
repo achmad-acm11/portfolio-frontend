@@ -26,7 +26,7 @@ export default function Skills(props) {
     <section className="skills mt-5" id="skills">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-12 col-lg-8 mb-3 qualification-side">
+          <div className="col-12 col-lg-8 mb-3 qualification-side" data-aos="fade-up"  data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-once="true">
             <div className="card">
               <div className="card-header">
                 <h5 className="text-uppercase m-0">Qualification</h5>
@@ -93,7 +93,7 @@ export default function Skills(props) {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-4 skills-side">
+          <div className="col-12 col-lg-4 skills-side" data-aos="fade-up"  data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-once="true">
             <div className="card">
               <div className="card-header">
                 <h5 className="text-uppercase m-0">Skills</h5>

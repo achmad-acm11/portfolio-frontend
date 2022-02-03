@@ -61,7 +61,7 @@ export default function PortfolioDetailDesc({ detail }) {
                       Company/Client
                     </div>
                     <div className="body-portfolio-detail">
-                      <p>{detail.clinet}</p>
+                      <p>{detail.client}</p>
                     </div>
                   </div>
                   <div className="longtime-wrapper">

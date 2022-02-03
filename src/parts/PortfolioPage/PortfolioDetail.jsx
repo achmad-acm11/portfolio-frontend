@@ -13,7 +13,11 @@ export default function PortfolioDetail(props) {
             <div className="row justify-content-center">
               {project.map((item, index) => {
                 return (
-                  <div key={item.id} className="col-md-3 col-12">
+                  <div
+                    key={item.id}
+                    className="col-md-3 col-12"
+                    onClick={() => props.history.push(`/project/${item.id}`)}
+                  >
                     <div className="project-wrapper to-project-detail">
                       <div className="project-image-wrapper text-center">
                         <img src={item.main_image} alt="" />

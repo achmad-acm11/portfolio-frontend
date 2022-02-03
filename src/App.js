@@ -6,6 +6,7 @@ import AboutPage from "pages/AboutPage";
 import QualificationPage from "pages/QualificationPage";
 import SkillsPage from "pages/SkillsPage";
 import PortfolioPage from "pages/PortfolioPage";
+import ProjectDetailPage from "pages/ProjectDetailPage";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             <Route path="/qualification" component={QualificationPage} />
             <Route path="/skills" component={SkillsPage} />
             <Route path="/portfolio" component={PortfolioPage} />
-            <Route exact path="/project/:id" component={PortfolioPage} />
+            <Route exact path="/project/:id" component={ProjectDetailPage} />
           </Switch>
         </div>
       </BrowserRouter>

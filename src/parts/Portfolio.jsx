@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Portfolio(props) {
   const { study_case, project } = props
   return (
-    <section className="portfolio mt-5" id="portfolio">
+    <section className="portfolio mt-5" id="portfolio" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-once="true">
       <div className="container">
         <div className="card bg-transparent">
           <div className="card-header">

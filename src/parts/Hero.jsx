@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero(props) {
   return (
-    <section className="hero-profile text-center px-4" id="hero-profile">
+    <section className="hero-profile text-center px-4" id="hero-profile" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-in">
       <div className="container mt-4">
         <div className="hero-profile-thumb rounded-circle overflow-hidden mx-auto">
           <img

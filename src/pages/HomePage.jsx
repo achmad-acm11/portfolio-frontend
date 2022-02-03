@@ -10,6 +10,8 @@ import APISocialMedia from "services/Social_media";
 import APIQualification from "services/Qualification";
 import APIStudyCase from "services/Study_case";
 import APIProject from "services/Project";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default class HomePage extends Component {
   state = {
@@ -27,6 +29,11 @@ export default class HomePage extends Component {
     this.qualificationData();
     this.studyCase();
     this.project();
+    AOS.init({
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
   }
   profileData = async () => {
     const profile = await APIProfile.getProfile();

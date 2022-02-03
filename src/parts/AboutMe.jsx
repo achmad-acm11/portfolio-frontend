@@ -6,7 +6,7 @@ export default function AboutMe() {
     <section className="about-me mt-5" id="about_me">
       <div className="container">
         <div className="row gap-3 gap-md-0 align-items-md-center">
-          <div className="col-12 col-md-6 mb-3">
+          <div className="col-12 col-md-6 mb-3" data-aos="fade-right" data-aos-duration="2000">
             <ul
               className="nav mb-3 justify-content-around justify-content-md-start gap-5"
               id="pills-tab"
@@ -102,7 +102,7 @@ export default function AboutMe() {
               </a>
             </div>
           </div>
-          <div className="col-12 col-md-6 d-flex justify-content-center mb-3">
+          <div className="col-12 col-md-6 d-flex justify-content-center mb-3" data-aos="fade-left" data-aos-duration="2000">
             <img src={frontEnd} alt="" className="img-fluid" />
           </div>
         </div>

@@ -23,6 +23,7 @@ export default class HomePage extends Component {
     study_case: [],
   };
   componentDidMount() {
+    window.scrollTo(0,0);
     document.title = "Achmad Mauliddin - Home";
     this.profileData();
     this.socialData();

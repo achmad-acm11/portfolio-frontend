@@ -16,6 +16,7 @@ export default class PortfolioPage extends Component {
     study_case: [],
   };
   componentDidMount() {
+    window.scrollTo(0,0);
     document.title = "Achmad Mauliddin - Portfolio";
     this.profileData();
     this.socialData();

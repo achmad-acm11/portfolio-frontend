@@ -3,7 +3,7 @@ import parse from "html-react-parser";
 
 export default function Qualification(props) {
   return (
-    <section className="qualification-detail mt-5" id="qualification_detail">
+    <section className="qualification-detail mt-5" id="qualification_detail" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-once="true">
       <div className="container">
         <h5 className="text-uppercase mb-4 fw-bold">qualification</h5>
         {props.qualification.map((item, index) => {

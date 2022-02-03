@@ -14,6 +14,7 @@ export default class SkillsPage extends Component {
     skills: {},
   };
   componentDidMount() {
+    window.scrollTo(0,0);
     document.title = "Achmad Mauliddin - Skills";
     this.profileData();
     this.socialData();

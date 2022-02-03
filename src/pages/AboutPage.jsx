@@ -12,6 +12,7 @@ export default class AboutPage extends Component {
     social: {},
   };
   componentDidMount() {
+    window.scrollTo(0, 0);
     document.title = "Achmad Mauliddin - About";
     this.profileData();
     this.socialData();

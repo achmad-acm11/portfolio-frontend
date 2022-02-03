@@ -3,7 +3,7 @@ import React from "react";
 export default function PortfolioDetail(props) {
   const { study_case, project } = props;
   return (
-    <section className="portfolio-list mt-5" id="portfolio_list">
+    <section className="portfolio-list mt-5" id="portfolio_list" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-in" data-aos-once="true">
       <div className="container">
         <h5 className="text-uppercase mb-5 fw-bold">portfolio</h5>
 

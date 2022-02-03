@@ -14,6 +14,7 @@ export default class QualificationPage extends Component {
     qualification: [],
   };
   componentDidMount() {
+    window.scrollTo(0, 0);
     document.title = "Achmad Mauliddin - Qualification";
     this.profileData();
     this.socialData();

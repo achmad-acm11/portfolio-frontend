@@ -4,7 +4,7 @@ import profileImage from "assets/img/image_profile.png";
 
 export default function AboutMe(props) {
   return (
-    <section className="about-me mt-5" id="about_me">
+    <section className="about-me mt-5" id="about_me" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-once="true">
       <div className="container">
         <div className="row gap-3 gap-md-0 mb-5 align-items-md-center">
           <div className="col-12 col-md-6 mb-3">

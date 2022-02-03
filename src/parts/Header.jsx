@@ -8,7 +8,7 @@ export default function Header(props) {
   );
 
   return (
-    <nav className="navbar navbar-expand-lg position-fixed bottom-0 start-0 w-100 navbar-dark" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in">
+    <nav className="navbar navbar-expand-lg position-fixed bottom-0 start-0 w-100 navbar-dark" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once="true">
       <div className="container flex-row-reverse flex-lg-row">
         <div className="collapse navbar-collapse nav_menu" id="nav_menu">
           <div className="row">

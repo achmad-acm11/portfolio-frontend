@@ -6,7 +6,7 @@ export default function SkillsDetail({ skills }) {
   }
 
   return (
-    <section className="skills-detail mt-5" id="skills_detail">
+    <section className="skills-detail mt-5" id="skills_detail" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-in" data-aos-once="true">
       <div className="container">
         <h5 className="text-uppercase mb-5 fw-bold">skills</h5>
 

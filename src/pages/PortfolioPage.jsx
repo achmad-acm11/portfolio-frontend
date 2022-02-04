@@ -7,6 +7,7 @@ import APIProfile from "services/Profile";
 import APIProject from "services/Project";
 import APISocialMedia from "services/Social_media";
 import APIStudyCase from "services/Study_case";
+import AOS from 'aos';
 
 export default class PortfolioPage extends Component {
   state = {
@@ -17,11 +18,17 @@ export default class PortfolioPage extends Component {
   };
   componentDidMount() {
     window.scrollTo(0,0);
+
     document.title = "Achmad Mauliddin - Portfolio";
     this.profileData();
     this.socialData();
     this.studyCase();
     this.project();
+    AOS.init({
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100
+    });
   }
   profileData = async () => {
     const profile = await APIProfile.getProfile();

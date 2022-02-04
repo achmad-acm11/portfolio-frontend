@@ -10,14 +10,9 @@ export default function AboutMe(props) {
           <div className="col-12 col-md-6 mb-3">
             <h5 className="text-uppercase mb-4 fw-bold">about me</h5>
             <div className="text-center text-md-start">
-              I’m a web developer who has the ability to develop, test, and
-              maintain web-based applications. Personally, I’m a person who
-              likes to continue to grow, learn new things, and think creatively.{" "}
-              <br /> <br />
-              Quidam alii sunt, et non est in nostra potestate. Quae omnia in
-              nostra sententia, pursuit, cupiditatem, aversatio, ex quibus in
-              Verbo, quicquid non suis actibus nostris. Non sunt in nostra
-              potestate corpore bona fama imperii, denique quod non sunt actus.
+            I’m a professional web developer based in Jakarta, Indonesia. I have the ability to develop, test, and maintain web-based applications. I have good motivated to always give the best effort for each project I did. <br /><br />
+
+            Personally, I'm a person to eager to learn and improve, with a passion for creative thingking.
             </div>
 
             <div className="button-wrapper mt-4 text-center">

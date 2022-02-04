@@ -3,7 +3,7 @@
           {
             "id": 1,
             "name": "Achmad Mauliddin",
-            "gender": "male",
+            "gender": "Male",
             "address": "Bogor",
             "nationality": "Indonesia",
             "religion": "Muslim",
@@ -63,7 +63,7 @@
         "name": "National Civil Service Agency (Intern)",
         "image": "http://localhost:3000/img/Logo_BKN.png",
         "address": "Jl. Mayor Jendral Sutoyo No.12, RT.4/RW.14, Cililitan, Kec. Kramat jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13640",
-        "description": "<p>Badan Kepegawaian Negara, disingkat BKN, adalah lembaga pemerintah nonkementerian Indonesia yang bertugas melaksanakan tugas pemerintahan di bidang manajemen kepegawaian negara.</p>",
+        "description": "<p>National Civil Service Agency, is an Indonesian non-ministerial government agency tasked with carrying out government duties in the field of state personnel management.</p>",
         "occupation_main": "Programmer",
         "lern": [
           {
@@ -155,6 +155,18 @@
             "name": "Javascript",
             "value": 90,
             "image": "http://localhost:3000/img/Logo_javascript.png"
+          },
+          {
+            "id": 8,
+            "name": "React JS",
+            "value": 80,
+            "image": "http://localhost:3000/img/Logo_react_js.png"
+          },
+          {
+            "id": 9,
+            "name": "Vue JS",
+            "value": 70,
+            "image": "http://localhost:3000/img/Logo_vue.png"
           }
         ],
         "backend": [
@@ -167,19 +179,19 @@
           {
             "id": 3,
             "name": "Node JS",
-            "value": 90,
+            "value": 80,
             "image": "http://localhost:3000/img/Logo_nodejs.png"
           },
           {
             "id": 4,
             "name": "Golang",
-            "value": 90,
+            "value": 80,
             "image": "http://localhost:3000/img/Logo_go.png"
           },
           {
             "id": 7,
             "name": "JAVA",
-            "value": 90,
+            "value": 70,
             "image": "http://localhost:3000/img/Logo_Java.png"
           }
         ]
@@ -188,21 +200,104 @@
       {
         "id": 1,
         "name": "Staycation",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus esse magnam quos necessitatibus cumque vero veritatis ad consequuntur! Sapiente, quam temporibus? Dignissimos tempore, commodi quos blanditiis dolorum sapiente aperiam quaerat.",
-        "main_image": "http://localhost:3000/img/main_staycation.png"
+        "short_desc": "The course from the website buildwithangga.com is to develop a web-based application, as the basis for learning the MERN Stack.",
+        "description": "<p>The course from the website buildwithangga.com is to develop a web-based application, as the basis for learning the MERN Stack. MERN Stack is part of the Full-Stack Web Developer which is focused on JavaScript (Full-Stack JavaScript Developer). M for MongoDB, E for ExpressJS, R for ReactJS, and N for NodeJS. But it's not just coding, but things that are learned from the UI and UX sections. <br /> <br /> The result of this course is a web-based application called staycation, which is a website that serves users in terms of finding a place to vacation. <a target='_blank' href='https://buildwithangga.com/'>(buildwithangga.com)</a></p>",
+        "main_image": "http://localhost:3000/img/main_staycation.png",
+        "client": "-",
+        "long_time": "-",
+        "platform": "Web",
+        "images": [],
+        "stacks":[
+          {
+            "id": 1,
+            "name": "HTML",
+            "image": "http://localhost:3000/img/Logo_html.png"
+          },
+          {
+            "id": 2,
+            "name": "CSS",
+            "image": "http://localhost:3000/img/Logo_css.png"
+          },
+          {
+            "id": 3,
+            "name": "React JS",
+            "image": "http://localhost:3000/img/Logo_react_js.png"
+          },
+          {
+            "id": 4,
+            "name": "Node JS",
+            "image": "http://localhost:3000/img/Logo_nodejs.png"
+          }
+        ]
       },
       {
         "id": 2,
         "name": "Luxspace",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus esse magnam quos necessitatibus cumque vero veritatis ad consequuntur! Sapiente, quam temporibus? Dignissimos tempore, commodi quos blanditiis dolorum sapiente aperiam quaerat.",
-        "main_image": "http://localhost:3000/img/main_luxspace.png"
+        "short_desc": "The course from the website buildwithangga.com is to build web-based applications, as a basis for learning to use React JS.",
+        "description": "<p>The course from the website buildwithangga.com is to build web-based applications, as a basis for learning to use React JS. React JS is a JavaScript framework that is used by Front-End developers to build interactive and high-performance websites. <br /> <br /> The result of this course is a web-based application called luxspace, which is a case study of an online furniture store. <a target='_blank' href='https://buildwithangga.com/'>(buildwithangga.com)</a></p>",
+        "main_image": "http://localhost:3000/img/main_luxspace.png",
+        "client": "-",
+        "long_time": "-",
+        "platform": "Web",
+        "images": [],
+        "stacks":[
+          {
+            "id": 1,
+            "name": "HTML",
+            "image": "http://localhost:3000/img/Logo_html.png"
+          },
+          {
+            "id": 2,
+            "name": "CSS",
+            "image": "http://localhost:3000/img/Logo_css.png"
+          },
+          {
+            "id": 3,
+            "name": "React JS",
+            "image": "http://localhost:3000/img/Logo_react_js.png"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Crowdfunding",
+        "short_desc": "The course from the website buildwithangga.com is to build web-based applications, as a basis for learning to use Golang & Vue JS.",
+        "description": "<p>The course from the website buildwithangga.com is to build web-based applications, as a basis for learning to use Golang & Vue JS. Vue JS is a Front-End framework used by Web Developers to build fast, light, and interactive websites. Golang is also often used as a programming language to build APIs that are consumed by Front-End. <br /> <br /> The result of this course is a web-based application called Crowdfunding. Crowdfunding is a case study to raise funds for startups. <a target='_blank' href='https://buildwithangga.com/'>(buildwithangga.com)</a></p>",
+        "main_image": "http://localhost:3000/img/main_crowdfunding.jpeg",
+        "client": "-",
+        "long_time": "-",
+        "platform": "Web",
+        "images": [],
+        "stacks":[
+          {
+            "id": 1,
+            "name": "HTML",
+            "image": "http://localhost:3000/img/Logo_html.png"
+          },
+          {
+            "id": 2,
+            "name": "CSS",
+            "image": "http://localhost:3000/img/Logo_css.png"
+          },
+          {
+            "id": 3,
+            "name": "Vue JS",
+            "image": "http://localhost:3000/img/Logo_vue.png"
+          },
+          {
+            "id": 4,
+            "name": "Golang",
+            "image": "http://localhost:3000/img/Logo_go.png"
+          }
+        ]
       }
     ],
     "Project":[
       {
         "id": 1,
         "name": "Qonstanta",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus esse magnam quos necessitatibus cumque vero veritatis ad consequuntur! Sapiente, quam temporibus? Dignissimos tempore, commodi quos blanditiis dolorum sapiente aperiam quaerat.",
+        "short_desc": "Qonstanta is an online-based learning system with the concept of Edu Live Class.",
+        "description": "<p>Qonstanta is an online-based learning system with the concept of Edu Live Class. Students will be guided online in the form of Live Class, Learning Videos, Question, Teaching Materials and Practice Questions, Tips and Tricks, Student Online Consultations, Student Periodic Reports, Chat Rooms, School and College Info, and Online Try Out. <a target='_blank' href='https://qonstanta.com/'>(Qonstanta)</a></p>",
         "main_image": "http://localhost:3000/img/main_qonstanta.png",
         "client": "PT. Rynest Technology Indomedia",
         "long_time": "August 2020 - January 2021",
@@ -245,6 +340,56 @@
           {
             "id":4,
             "image": "http://localhost:3000/img/qonstanta4.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Internsip App",
+        "short_desc": "The Internship Application is a program of Badan Kepegawain Negara Information System.",
+        "description": "<p>The Internship Application is a program of Badan Kepegawain Negara Information System in providing facilities for students to develop the academic potential that has been learned while at school or on campus with experience working in Badan Kepegawaian Negara (BKN).</p>",
+        "main_image": "http://localhost:3000/img/main_bkn.png",
+        "client": "National Civil Service Agency (BKN)",
+        "long_time": "January 2020 - March 2020",
+        "platform": "Web",
+        "stacks":[
+          {
+            "id": 1,
+            "name": "HTML",
+            "image": "http://localhost:3000/img/Logo_html.png"
+          },
+          {
+            "id": 2,
+            "name": "CSS",
+            "image": "http://localhost:3000/img/Logo_css.png"
+          },
+          {
+            "id": 3,
+            "name": "Javascript",
+            "image": "http://localhost:3000/img/Logo_javascript.png"
+          },
+          {
+            "id": 4,
+            "name": "Java",
+            "image": "http://localhost:3000/img/Logo_Java.png"
+          }
+        ],
+        "images": [
+          {
+            "id":1,
+            "image": "http://localhost:3000/img/img_bkn_1.png"
+          },
+          {
+            "id":2,
+            "image": "http://localhost:3000/img/img_bkn_2.png"
+          },
+          {
+            "id":3,
+            "image": "http://localhost:3000/img/img_bkn_3.png"
+          },
+          {
+            "id":4,
+            "image": "http://localhost:3000/img/img_bkn_4.png"
           }
         ]
       }

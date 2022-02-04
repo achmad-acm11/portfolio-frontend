@@ -2,9 +2,49 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Portfolio(props) {
-  const { study_case, project } = props
+  const { study_case, project } = props;
+  const wrapperStudyCase = [];
+  const wrapperProject = [];
+  if (study_case.length !== 0) {
+    for (let index = 0; index < study_case.length; index++) {
+      const w = [];
+      if (index % 2 === 0) {
+        w.push(study_case[index]);
+        if (study_case[index + 1] !== undefined) {
+          w.push(study_case[index + 1]);
+        }
+      }
+      if (w.length > 0) {
+        wrapperStudyCase.push(w);
+      }
+      index += 1;
+    }
+  }
+  if (project.length !== 0) {
+    for (let index = 0; index < project.length; index++) {
+      const w = [];
+      if (index % 2 === 0) {
+        w.push(project[index]);
+        if (project[index + 1] !== undefined) {
+          w.push(project[index + 1]);
+        }
+      }
+      if (w.length > 0) {
+        wrapperProject.push(w);
+      }
+      index += 1;
+    }
+  }
+  
   return (
-    <section className="portfolio mt-5" id="portfolio" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-once="true">
+    <section
+      className="portfolio mt-5"
+      id="portfolio"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-anchor-placement="bottom-bottom"
+      data-aos-once="true"
+    >
       <div className="container">
         <div className="card bg-transparent">
           <div className="card-header">
@@ -46,7 +86,7 @@ export default function Portfolio(props) {
                       aria-controls="pills-study"
                       aria-selected="false"
                     >
-                      Study Case
+                      Case Study
                     </a>
                   </li>
                 </ul>
@@ -68,25 +108,41 @@ export default function Portfolio(props) {
                       <div className="carousel-inner">
                         <div className="carousel-item active">
                           <div className="row">
-                            {project.map((item, index) => {
+                            {wrapperProject.map((item, i) => {
                               return (
                                 <div
-                                  key={item.id}
-                                  className="col-12 to-project-detail"
-                                  onClick={() => {
-                                    props.history.push(`/project/${item.id}`);
-                                  }}
+                                  className={`carousel-item ${
+                                    i === 0 ? "active" : ""
+                                  }`}
                                 >
-                                  <div className="image-wrapper text-center">
-                                    <img src={item.main_image} alt="" />
-                                  </div>
-                                  <div className="project-text text-center">
-                                    {item.name}
-                                  </div>
-                                  <div className="label-wrapper text-center">
-                                    <div className="project-label badge rounded-pill">
-                                      Project
-                                    </div>
+                                  <div className="row">
+                                    {item.map((data, index) => {
+                                      return (
+                                        <div
+                                          key={data.id}
+                                          className={`col-${
+                                            item.length === 1 ? "12" : "6"
+                                          } to-project-detail`}
+                                          onClick={() => {
+                                            props.history.push(
+                                              `/project/${data.id}`
+                                            );
+                                          }}
+                                        >
+                                          <div className="image-wrapper text-center">
+                                            <img src={data.main_image} alt="" />
+                                          </div>
+                                          <div className="project-text text-center">
+                                            {data.name}
+                                          </div>
+                                          <div className="label-wrapper text-center">
+                                            <div className="project-label badge rounded-pill">
+                                              Project
+                                            </div>
+                                          </div>
+                                        </div>
+                                      );
+                                    })}
                                   </div>
                                 </div>
                               );
@@ -133,30 +189,45 @@ export default function Portfolio(props) {
                       data-bs-interval="false"
                     >
                       <div className="carousel-inner">
-                        <div className="carousel-item active">
-                          <div className="row">
-                            {study_case.map((item, index) => {
-                              return (
-                                <div
-                                  key={item.id}
-                                  className="col-6 to-project-detail"
-                                >
-                                  <div className="image-wrapper text-center">
-                                    <img src={item.main_image} alt="" />
-                                  </div>
-                                  <div className="study-case-text text-center">
-                                    {item.name}
-                                  </div>
-                                  <div className="label-wrapper text-center">
-                                    <div className="study-case-label badge rounded-pill">
-                                      Study Case
+                        {wrapperStudyCase.map((item, i) => {
+                          return (
+                            <div
+                              className={`carousel-item ${
+                                i === 0 ? "active" : ""
+                              }`}
+                            >
+                              <div className="row">
+                                {item.map((data, index) => {
+                                  return (
+                                    <div
+                                      key={data.id}
+                                      className={`col-${
+                                        item.length === 1 ? "12" : "6"
+                                      } to-project-detail`}
+                                      onClick={() => {
+                                        props.history.push(
+                                          `/case_study/${data.id}`
+                                        );
+                                      }}
+                                    >
+                                      <div className="image-wrapper text-center">
+                                        <img src={data.main_image} alt="" />
+                                      </div>
+                                      <div className="study-case-text text-center">
+                                        {data.name}
+                                      </div>
+                                      <div className="label-wrapper text-center">
+                                        <div className="study-case-label badge rounded-pill">
+                                          Case Study
+                                        </div>
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          );
+                        })}
                       </div>
                       <button
                         className="carousel-control-prev"

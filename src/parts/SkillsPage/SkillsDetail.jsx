@@ -6,12 +6,12 @@ export default function SkillsDetail({ skills }) {
   }
 
   return (
-    <section className="skills-detail mt-5" id="skills_detail" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-in" data-aos-once="true">
+    <section className="skills-detail mt-5" id="skills_detail" data-aos="fade-down" data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-in" data-aos-once="true">
       <div className="container">
         <h5 className="text-uppercase mb-5 fw-bold">skills</h5>
 
         <div className="row gap-3 gap-md-0">
-          <div className="col-12 col-md-6 mb-3">
+          <div className="col-12 col-md-6 mb-3" data-aos="fade-down" data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-in" data-aos-once="true">
             <h6 className="fw-bold header-skills-detail mb-4">
               <i className="uil uil-arrow"></i> Frontend
             </h6>
@@ -48,7 +48,7 @@ export default function SkillsDetail({ skills }) {
               })}
             </div>
           </div>
-          <div className="col-12 col-md-6 mb-3">
+          <div className="col-12 col-md-6 mb-3" data-aos="fade-down" data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-in" data-aos-once="true">
             <h6 className="fw-bold header-skills-detail mb-4">
               <i className="uil uil-server-connection"></i> Backend
             </h6>

@@ -31,7 +31,7 @@ export default function Qualification(props) {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-md-3">
+                <div className="col-12 col-md-3 mb-3">
                   <div className="occupation-wrapper">
                     <div className="header-qualification-detail">
                       Occupation

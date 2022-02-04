@@ -6,6 +6,8 @@ import React, { Component } from "react";
 import APIProfile from "services/Profile";
 import APIProject from "services/Project";
 import APISocialMedia from "services/Social_media";
+import AOS from "aos";
+import APIStudyCase from "services/Study_case";
 
 export default class ProjectDetailPage extends Component {
   state = {
@@ -14,10 +16,16 @@ export default class ProjectDetailPage extends Component {
     detail: {},
   };
   componentDidMount() {
+    window.scrollTo(0, 0);
     document.title = "Achmad Mauliddin - Portfolio";
     this.profileData();
     this.socialData();
     this.detailData();
+    AOS.init({
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
   }
   profileData = async () => {
     const profile = await APIProfile.getProfile();
@@ -38,9 +46,10 @@ export default class ProjectDetailPage extends Component {
     } else {
       (async () => {
         try {
-          const project = await APIProject.getDetailProject(
-            this.props.match.params.id
-          );
+          const project =
+            this.props.match.params.type === "project"
+              ? await APIProject.getDetailProject(this.props.match.params.id)
+              : await APIStudyCase.getStudyCaseDetail(this.props.match.params.id);
           this.setState({
             ...this.state,
             detail: project,

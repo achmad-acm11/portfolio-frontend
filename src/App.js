@@ -19,7 +19,7 @@ function App() {
             <Route path="/qualification" component={QualificationPage} />
             <Route path="/skills" component={SkillsPage} />
             <Route path="/portfolio" component={PortfolioPage} />
-            <Route exact path="/project/:id" component={ProjectDetailPage} />
+            <Route exact path="/:type(project|case_study)/:id" component={ProjectDetailPage} />
           </Switch>
         </div>
       </BrowserRouter>

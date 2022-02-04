@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import laptop from "../../assets/img/Laptop 1.png";
+import parse from "html-react-parser";
 
 export default function PortfolioDetailDesc({ detail }) {
-  if (detail.images === undefined) {
-    return null;
-  }
+  // if (detail.images === undefined) {
+  //   return null;
+  // }
   return (
-    <section className="portfolio-detail mt-5" id="portfolio_detail">
+    <section className="portfolio-detail mt-5" id="portfolio_detail" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-in" data-aos-once="true">
       <div className="container">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb">
@@ -36,10 +37,10 @@ export default function PortfolioDetailDesc({ detail }) {
             </div>
             <div className="col-12">
               <div className="thumbnail-wrapper d-flex justify-content-center flex-nowrap gap-md-5 gap-1">
-                {detail.images.map((item, index) => {
+                {detail.images !== undefined && detail.images.map((item, index) => {
                   return (
                     <div key={item.id} className="thumbnail-item">
-                      <img src={item.image} alt="" className="img-fluid" />
+                      <img src={item.image} alt="" className="img-fluid" style={{height:"100px",objectFit:"fill"}} width={"160px"}/>
                     </div>
                   );
                 })}
@@ -52,7 +53,7 @@ export default function PortfolioDetailDesc({ detail }) {
                     Short Description
                   </h6>
                   <div className="body-portfolio-detail">
-                    <p>{detail.description}</p>
+                    {detail.description !== undefined && parse(detail.description)}
                   </div>
                 </div>
                 <div className="col-3">
@@ -84,7 +85,7 @@ export default function PortfolioDetailDesc({ detail }) {
                     <div className="fw-bold header-portfolio-detail">Stack</div>
                     <div className="body-portfolio-detail">
                       <div className="d-flex flex-nowrap gap-1">
-                        {detail.stacks.map((item, index) => {
+                        {detail.stacks !== undefined && detail.stacks.map((item, index) => {
                           return (
                             <div
                               key={item.id}

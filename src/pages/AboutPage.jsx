@@ -5,6 +5,7 @@ import Hero from "parts/Hero";
 import React, { Component } from "react";
 import APIProfile from "services/Profile";
 import APISocialMedia from "services/Social_media";
+import AOS from "aos";
 
 export default class AboutPage extends Component {
   state = {
@@ -16,6 +17,11 @@ export default class AboutPage extends Component {
     document.title = "Achmad Mauliddin - About";
     this.profileData();
     this.socialData();
+    AOS.init({
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
   }
   profileData = async () => {
     const profile = await APIProfile.getProfile();

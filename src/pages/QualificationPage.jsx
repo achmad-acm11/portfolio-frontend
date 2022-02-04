@@ -6,6 +6,8 @@ import React, { Component } from "react";
 import APIProfile from "services/Profile";
 import APIQualification from "services/Qualification";
 import APISocialMedia from "services/Social_media";
+import AOS from 'aos';
+
 
 export default class QualificationPage extends Component {
   state = {
@@ -19,6 +21,11 @@ export default class QualificationPage extends Component {
     this.profileData();
     this.socialData();
     this.qualificationData();
+    AOS.init({
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
   }
   profileData = async () => {
     const profile = await APIProfile.getProfile();

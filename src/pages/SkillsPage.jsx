@@ -6,6 +6,7 @@ import React, { Component } from "react";
 import APIProfile from "services/Profile";
 import APISkills from "services/Skills";
 import APISocialMedia from "services/Social_media";
+import AOS from 'aos';
 
 export default class SkillsPage extends Component {
   state = {
@@ -19,6 +20,11 @@ export default class SkillsPage extends Component {
     this.profileData();
     this.socialData();
     this.skillsData();
+    AOS.init({
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
     // const skills = () => {
     // fetch("http://localhost:3004/Skills")
     //   .then((response) => response.json())

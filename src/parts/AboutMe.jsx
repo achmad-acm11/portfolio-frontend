@@ -48,15 +48,9 @@ export default function AboutMe() {
                 role="tabpanel"
                 aria-labelledby="pills-about-tab"
               >
-                I’m a web developer who has the ability to develop, test, and
-                maintain web-based applications. Personally, I’m a person who
-                likes to continue to grow, learn new things, and think
-                creatively. <br /> <br />
-                Quidam alii sunt, et non est in nostra potestate. Quae omnia in
-                nostra sententia, pursuit, cupiditatem, aversatio, ex quibus in
-                Verbo, quicquid non suis actibus nostris. Non sunt in nostra
-                potestate corpore bona fama imperii, denique quod non sunt
-                actus.
+                I’m a professional web developer based in Jakarta, Indonesia. I have the ability to develop, test, and maintain web-based applications. I have good motivated to always give the best effort for each project I did. <br /><br />
+
+                Personally, I'm a person to eager to learn and improve, with a passion for creative thingking.
               </div>
               <div
                 className="tab-pane fade text-md-start"

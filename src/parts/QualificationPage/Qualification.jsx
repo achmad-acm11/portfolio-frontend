@@ -8,7 +8,6 @@ export default function Qualification(props) {
         <h5 className="text-uppercase mb-4 fw-bold">qualification</h5>
         {props.qualification.map((item, index) => {
           return (
-            <>
               <div key={item.id} className="row gap-3 gap-md-0">
                 <div className="col-12 col-md-2 mb-3">
                   <img src={item.image} alt="" className="img-fluid" />
@@ -75,9 +74,6 @@ export default function Qualification(props) {
                   </div>
                 </div>
               </div>
-
-              <hr />
-            </>
           );
         })}
       </div>

@@ -1,0 +1,13 @@
+{
+    "id": 1,
+    "name": "Achmad Mauliddin",
+    "gender": "Male",
+    "address": "Bogor",
+    "nationality": "Indonesia",
+    "religion": "Muslim",
+    "short_name": "Achmad M",
+    "occupation_main": "Programmer",
+    "email": "achmadmauliddin2@gmail.com",
+    "occupation": "Web Developer",
+    "image": "http://localhost:3000/img/photoProfile.png"
+}

@@ -1,0 +1,116 @@
+[
+    {
+      "id": 1,
+      "name": "IPB University",
+      "image": "http://localhost:3000/img/Logo_IPB.png",
+      "address": "Jl. Kumbang No.14, RT.02/RW.06, Babakan, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16128",
+      "description": "<p>IPB University, or the Institut Pertanian Bogor, was founded in 1963, as a state-run agricultural university with the aim of strengthening food security, promoting bioenergy, protecting the regional environment and alleviating poverty. It is the only state university with a focus on tropical agriculture and life sciences – and is world-renowned in this field.</p><br /><p>Based in the city of Bogor, Indonesia, it is approximately 60km from the capital city, Jakarta. IPB University comprises five campuses: Baranangsiang, Dramaga, Gunung Gede, Cilibende and Taman Kencana. There is a research centre, university farm, animal hospital, student dormitory and library.</p>",
+      "occupation_main": "Student",
+      "lern": [
+        {
+          "id": 2,
+          "name": "HTML",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_html.png"
+        },
+        {
+          "id": 6,
+          "name": "CSS",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_css.png"
+        },
+        {
+          "id": 5,
+          "name": "Javascript",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_javascript.png"
+        },
+        {
+          "id": 1,
+          "name": "PHP",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_PHP.png"
+        }
+      ],
+      "occupation": "D3 - Informatics Management",
+      "long_time": "2017-2020",
+      "status": "complete",
+      "type": "school"
+    },
+    {
+      "id": 2,
+      "name": "National Civil Service Agency (Intern)",
+      "image": "http://localhost:3000/img/Logo_BKN.png",
+      "address": "Jl. Mayor Jendral Sutoyo No.12, RT.4/RW.14, Cililitan, Kec. Kramat jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13640",
+      "description": "<p>National Civil Service Agency, is an Indonesian non-ministerial government agency tasked with carrying out government duties in the field of state personnel management.</p>",
+      "occupation_main": "Programmer",
+      "lern": [
+        {
+          "id": 2,
+          "name": "HTML",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_html.png"
+        },
+        {
+          "id": 6,
+          "name": "CSS",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_css.png"
+        },
+        {
+          "id": 5,
+          "name": "Javascript",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_javascript.png"
+        },
+        {
+          "id": 7,
+          "name": "JAVA",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_Java.png"
+        }
+      ],
+      "occupation": "Web Developer",
+      "long_time": "January 2020 - March 2020",
+      "status": "complete",
+      "type": "work"
+    },
+    {
+      "id": 3,
+      "name": "PT. Rynest Technology Indomedia",
+      "image": "http://localhost:3000/img/Logo_rti.png",
+      "address": "Jl. Tole Iskandar No.11, Sukmajaya, Kec. Sukmajaya, Kota Depok, Jawa Barat 16412",
+      "description": "<p>PT. Rynest Technology Indomedia is a company engaged in Information Technology with the characteristics of services that are innovative, creative, and modern. RTI was founded in 2009 as well as under the auspices of The Rynest Companies Group (RCG) business unit.<br /> With the support of competent and professional and experienced human resources so that the quality of products and services provided by RTI can always meet the needs of its customers, especially for information technology services in the fields of insurance, pension funds, and finance.</p>",
+      "occupation_main": "Programmer",
+      "lern": [
+        {
+          "id": 2,
+          "name": "HTML",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_html.png"
+        },
+        {
+          "id": 6,
+          "name": "CSS",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_css.png"
+        },
+        {
+          "id": 5,
+          "name": "Javascript",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_javascript.png"
+        },
+        {
+          "id": 1,
+          "name": "PHP",
+          "value": 90,
+          "image": "http://localhost:3000/img/Logo_PHP.png"
+        }
+      ],
+      "occupation": "Web Developer",
+      "long_time": "August 2020 - Present",
+      "status": "pending",
+      "type": "work"
+    }
+]

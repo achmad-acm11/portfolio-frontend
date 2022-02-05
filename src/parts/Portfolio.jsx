@@ -35,7 +35,7 @@ export default function Portfolio(props) {
       index += 1;
     }
   }
-  
+
   return (
     <section
       className="portfolio mt-5"
@@ -111,6 +111,7 @@ export default function Portfolio(props) {
                             {wrapperProject.map((item, i) => {
                               return (
                                 <div
+                                  key={i}
                                   className={`carousel-item ${
                                     i === 0 ? "active" : ""
                                   }`}
@@ -192,6 +193,7 @@ export default function Portfolio(props) {
                         {wrapperStudyCase.map((item, i) => {
                           return (
                             <div
+                              key={i}
                               className={`carousel-item ${
                                 i === 0 ? "active" : ""
                               }`}

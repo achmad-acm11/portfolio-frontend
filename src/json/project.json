@@ -1,0 +1,102 @@
+[
+    {
+      "id": 1,
+      "name": "Qonstanta",
+      "short_desc": "Qonstanta is an online-based learning system with the concept of Edu Live Class.",
+      "description": "<p>Qonstanta is an online-based learning system with the concept of Edu Live Class. Students will be guided online in the form of Live Class, Learning Videos, Question, Teaching Materials and Practice Questions, Tips and Tricks, Student Online Consultations, Student Periodic Reports, Chat Rooms, School and College Info, and Online Try Out. <a target='_blank' href='https://qonstanta.com/'>(Qonstanta)</a></p>",
+      "main_image": "http://localhost:3000/img/main_qonstanta.png",
+      "client": "PT. Rynest Technology Indomedia",
+      "long_time": "August 2020 - January 2021",
+      "platform": "Web",
+      "stacks":[
+        {
+          "id": 1,
+          "name": "HTML",
+          "image": "http://localhost:3000/img/Logo_html.png"
+        },
+        {
+          "id": 2,
+          "name": "CSS",
+          "image": "http://localhost:3000/img/Logo_css.png"
+        },
+        {
+          "id": 3,
+          "name": "Javascript",
+          "image": "http://localhost:3000/img/Logo_javascript.png"
+        },
+        {
+          "id": 4,
+          "name": "PHP",
+          "image": "http://localhost:3000/img/Logo_PHP.png"
+        }
+      ],
+      "images": [
+        {
+          "id":1,
+          "image": "http://localhost:3000/img/qonstanta1.png"
+        },
+        {
+          "id":2,
+          "image": "http://localhost:3000/img/qonstanta2.png"
+        },
+        {
+          "id":3,
+          "image": "http://localhost:3000/img/qonstanta3.png"
+        },
+        {
+          "id":4,
+          "image": "http://localhost:3000/img/qonstanta4.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Internsip App",
+      "short_desc": "The Internship Application is a program of Badan Kepegawain Negara Information System.",
+      "description": "<p>The Internship Application is a program of Badan Kepegawain Negara Information System in providing facilities for students to develop the academic potential that has been learned while at school or on campus with experience working in Badan Kepegawaian Negara (BKN).</p>",
+      "main_image": "http://localhost:3000/img/main_bkn.png",
+      "client": "National Civil Service Agency (BKN)",
+      "long_time": "January 2020 - March 2020",
+      "platform": "Web",
+      "stacks":[
+        {
+          "id": 1,
+          "name": "HTML",
+          "image": "http://localhost:3000/img/Logo_html.png"
+        },
+        {
+          "id": 2,
+          "name": "CSS",
+          "image": "http://localhost:3000/img/Logo_css.png"
+        },
+        {
+          "id": 3,
+          "name": "Javascript",
+          "image": "http://localhost:3000/img/Logo_javascript.png"
+        },
+        {
+          "id": 4,
+          "name": "Java",
+          "image": "http://localhost:3000/img/Logo_Java.png"
+        }
+      ],
+      "images": [
+        {
+          "id":1,
+          "image": "http://localhost:3000/img/img_bkn_1.png"
+        },
+        {
+          "id":2,
+          "image": "http://localhost:3000/img/img_bkn_2.png"
+        },
+        {
+          "id":3,
+          "image": "http://localhost:3000/img/img_bkn_3.png"
+        },
+        {
+          "id":4,
+          "image": "http://localhost:3000/img/img_bkn_4.png"
+        }
+      ]
+    }
+]

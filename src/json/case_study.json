@@ -1,0 +1,96 @@
+[
+    {
+        "id": 1,
+        "name": "Staycation",
+        "short_desc": "The course from the website buildwithangga.com is to develop a web-based application, as the basis for learning the MERN Stack.",
+        "description": "<p>The course from the website buildwithangga.com is to develop a web-based application, as the basis for learning the MERN Stack. MERN Stack is part of the Full-Stack Web Developer which is focused on JavaScript (Full-Stack JavaScript Developer). M for MongoDB, E for ExpressJS, R for ReactJS, and N for NodeJS. But it's not just coding, but things that are learned from the UI and UX sections. <br /> <br /> The result of this course is a web-based application called staycation, which is a website that serves users in terms of finding a place to vacation. <a target='_blank' href='https://buildwithangga.com/'>(buildwithangga.com)</a></p>",
+        "main_image": "http://localhost:3000/img/main_staycation.png",
+        "client": "-",
+        "long_time": "-",
+        "platform": "Web",
+        "images": [],
+        "stacks":[
+        {
+            "id": 1,
+            "name": "HTML",
+            "image": "http://localhost:3000/img/Logo_html.png"
+        },
+        {
+            "id": 2,
+            "name": "CSS",
+            "image": "http://localhost:3000/img/Logo_css.png"
+        },
+        {
+            "id": 3,
+            "name": "React JS",
+            "image": "http://localhost:3000/img/Logo_react_js.png"
+        },
+        {
+            "id": 4,
+            "name": "Node JS",
+            "image": "http://localhost:3000/img/Logo_nodejs.png"
+        }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Luxspace",
+        "short_desc": "The course from the website buildwithangga.com is to build web-based applications, as a basis for learning to use React JS.",
+        "description": "<p>The course from the website buildwithangga.com is to build web-based applications, as a basis for learning to use React JS. React JS is a JavaScript framework that is used by Front-End developers to build interactive and high-performance websites. <br /> <br /> The result of this course is a web-based application called luxspace, which is a case study of an online furniture store. <a target='_blank' href='https://buildwithangga.com/'>(buildwithangga.com)</a></p>",
+        "main_image": "http://localhost:3000/img/main_luxspace.png",
+        "client": "-",
+        "long_time": "-",
+        "platform": "Web",
+        "images": [],
+        "stacks":[
+        {
+            "id": 1,
+            "name": "HTML",
+            "image": "http://localhost:3000/img/Logo_html.png"
+        },
+        {
+            "id": 2,
+            "name": "CSS",
+            "image": "http://localhost:3000/img/Logo_css.png"
+        },
+        {
+            "id": 3,
+            "name": "React JS",
+            "image": "http://localhost:3000/img/Logo_react_js.png"
+        }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Crowdfunding",
+        "short_desc": "The course from the website buildwithangga.com is to build web-based applications, as a basis for learning to use Golang & Vue JS.",
+        "description": "<p>The course from the website buildwithangga.com is to build web-based applications, as a basis for learning to use Golang & Vue JS. Vue JS is a Front-End framework used by Web Developers to build fast, light, and interactive websites. Golang is also often used as a programming language to build APIs that are consumed by Front-End. <br /> <br /> The result of this course is a web-based application called Crowdfunding. Crowdfunding is a case study to raise funds for startups. <a target='_blank' href='https://buildwithangga.com/'>(buildwithangga.com)</a></p>",
+        "main_image": "http://localhost:3000/img/main_crowdfunding.jpeg",
+        "client": "-",
+        "long_time": "-",
+        "platform": "Web",
+        "images": [],
+        "stacks":[
+        {
+            "id": 1,
+            "name": "HTML",
+            "image": "http://localhost:3000/img/Logo_html.png"
+        },
+        {
+            "id": 2,
+            "name": "CSS",
+            "image": "http://localhost:3000/img/Logo_css.png"
+        },
+        {
+            "id": 3,
+            "name": "Vue JS",
+            "image": "http://localhost:3000/img/Logo_vue.png"
+        },
+        {
+            "id": 4,
+            "name": "Golang",
+            "image": "http://localhost:3000/img/Logo_go.png"
+        }
+        ]
+    }
+]

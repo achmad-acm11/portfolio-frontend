@@ -32,8 +32,8 @@ export default function Hero(props) {
                   height="28"
                   rx="4"
                   stroke="#7DBFE2"
-                  stroke-width="2"
-                  shape-rendering="crispEdges"
+                  strokeWidth="2"
+                  shapeRendering="crispEdges"
                 />
               </g>
               <path
@@ -48,9 +48,9 @@ export default function Hero(props) {
                   width="32"
                   height="33"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
                     in="SourceAlpha"
                     type="matrix"
@@ -96,8 +96,8 @@ export default function Hero(props) {
                   height="28"
                   rx="4"
                   stroke="#7DBFE2"
-                  stroke-width="2"
-                  shape-rendering="crispEdges"
+                  strokeWidth="2"
+                  shapeRendering="crispEdges"
                 />
               </g>
               <path
@@ -112,9 +112,9 @@ export default function Hero(props) {
                   width="32"
                   height="33"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
                     in="SourceAlpha"
                     type="matrix"
@@ -160,8 +160,8 @@ export default function Hero(props) {
                   height="28"
                   rx="4"
                   stroke="#7DBFE2"
-                  stroke-width="2"
-                  shape-rendering="crispEdges"
+                  strokeWidth="2"
+                  shapeRendering="crispEdges"
                 />
               </g>
               <path
@@ -176,9 +176,9 @@ export default function Hero(props) {
                   width="32"
                   height="33"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
                     in="SourceAlpha"
                     type="matrix"

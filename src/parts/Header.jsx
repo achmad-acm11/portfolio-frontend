@@ -62,16 +62,6 @@ export default function Header(props) {
                 <i className="uil uil-scenery"></i>Portfolio
               </Link>
             </div>
-            <div className="col-4 col-lg-auto">
-              <a
-                href="#contact"
-                className={`${classNav} ${
-                  props.match.path === "/contact" ? "active" : ""
-                }`}
-              >
-                <i className="uil uil-message"></i>Contact
-              </a>
-            </div>
           </div>
         </div>
         <button

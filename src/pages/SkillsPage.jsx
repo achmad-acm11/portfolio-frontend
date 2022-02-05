@@ -3,10 +3,13 @@ import Header from "parts/Header";
 import Hero from "parts/Hero";
 import SkillsDetail from "parts/SkillsPage/SkillsDetail";
 import React, { Component } from "react";
-import APIProfile from "services/Profile";
-import APISkills from "services/Skills";
-import APISocialMedia from "services/Social_media";
+// import APIProfile from "services/Profile";
+// import APISkills from "services/Skills";
+// import APISocialMedia from "services/Social_media";
 import AOS from 'aos';
+import profileJson from 'json/profile.json';
+import socialMediaJson from 'json/social_media.json';
+import skillsJson from 'json/skills.json';
 
 export default class SkillsPage extends Component {
   state = {
@@ -34,26 +37,35 @@ export default class SkillsPage extends Component {
   }
 
   profileData = async () => {
-    const profile = await APIProfile.getProfile();
+    // const profile = await APIProfile.getProfile();
+    // this.setState({
+    //   profile: profile[0],
+    // });
     this.setState({
-      profile: profile[0],
-    });
+      profile: profileJson
+    })
   };
   socialData = async () => {
-    const social = await APISocialMedia.getSocialMedia();
+    // const social = await APISocialMedia.getSocialMedia();
+    // this.setState({
+    //   ...this.state,
+    //   social: social,
+    // });
     this.setState({
-      ...this.state,
-      social: social,
-    });
+      social: socialMediaJson
+    })
   };
 
   skillsData = () => {
-    APISkills.getSkills().then((res) =>
-      this.setState({
-        ...this.state,
-        skills: res,
-      })
-    );
+    // APISkills.getSkills().then((res) =>
+    //   this.setState({
+    //     ...this.state,
+    //     skills: res,
+    //   })
+    // );
+    this.setState({
+      skills: skillsJson
+    })
   };
   render() {
     return (

@@ -1,0 +1,60 @@
+{
+    "frontend":[
+        {
+        "id": 2,
+        "name": "HTML",
+        "value": 90,
+        "image": "http://localhost:3000/img/Logo_html.png"
+        },
+        {
+        "id": 6,
+        "name": "CSS",
+        "value": 90,
+        "image": "http://localhost:3000/img/Logo_css.png"
+        },
+        {
+        "id": 5,
+        "name": "Javascript",
+        "value": 90,
+        "image": "http://localhost:3000/img/Logo_javascript.png"
+        },
+        {
+        "id": 8,
+        "name": "React JS",
+        "value": 80,
+        "image": "http://localhost:3000/img/Logo_react_js.png"
+        },
+        {
+        "id": 9,
+        "name": "Vue JS",
+        "value": 70,
+        "image": "http://localhost:3000/img/Logo_vue.png"
+        }
+    ],
+    "backend": [
+        {
+        "id": 1,
+        "name": "PHP",
+        "value": 90,
+        "image": "http://localhost:3000/img/Logo_PHP.png"
+        },
+        {
+        "id": 3,
+        "name": "Node JS",
+        "value": 80,
+        "image": "http://localhost:3000/img/Logo_nodejs.png"
+        },
+        {
+        "id": 4,
+        "name": "Golang",
+        "value": 80,
+        "image": "http://localhost:3000/img/Logo_go.png"
+        },
+        {
+        "id": 7,
+        "name": "JAVA",
+        "value": 70,
+        "image": "http://localhost:3000/img/Logo_Java.png"
+        }
+    ]
+}

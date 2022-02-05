@@ -6,7 +6,11 @@ export default function AboutMe() {
     <section className="about-me mt-5" id="about_me">
       <div className="container">
         <div className="row gap-3 gap-md-0 align-items-md-center">
-          <div className="col-12 col-md-6 mb-3" data-aos="fade-right" data-aos-duration="2000">
+          <div
+            className="col-12 col-md-6 mb-3"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <ul
               className="nav mb-3 justify-content-around justify-content-md-start gap-5"
               id="pills-tab"
@@ -48,9 +52,13 @@ export default function AboutMe() {
                 role="tabpanel"
                 aria-labelledby="pills-about-tab"
               >
-                I’m a professional web developer based in Jakarta, Indonesia. I have the ability to develop, test, and maintain web-based applications. I have good motivated to always give the best effort for each project I did. <br /><br />
-
-                Personally, I'm a person to eager to learn and improve, with a passion for creative thingking.
+                I’m a professional web developer based in Jakarta, Indonesia. I
+                have the ability to develop, test, and maintain web-based
+                applications. I have good motivated to always give the best
+                effort for each project I did. <br />
+                <br />
+                Personally, I'm a person to eager to learn and improve, with a
+                passion for creative thingking.
               </div>
               <div
                 className="tab-pane fade text-md-start"
@@ -59,34 +67,36 @@ export default function AboutMe() {
                 aria-labelledby="pills-info-tab"
               >
                 <table className="table table-borderless">
-                  <tr>
-                    <th className="text-start">Full Name :</th>
-                    <td className="text-end">Achmad Mauliddin</td>
-                  </tr>
-                  <tr>
-                    <th className="text-start">Gender :</th>
-                    <td className="text-end">Male</td>
-                  </tr>
-                  <tr>
-                    <th className="text-start">Address :</th>
-                    <td className="text-end">Bogor</td>
-                  </tr>
-                  <tr>
-                    <th className="text-start">Nationality :</th>
-                    <td className="text-end">Indonesia</td>
-                  </tr>
-                  <tr>
-                    <th className="text-start">Religion :</th>
-                    <td className="text-end">Muslim</td>
-                  </tr>
-                  <tr>
-                    <th className="text-start">Occupation :</th>
-                    <td className="text-end">Programmer, Web Developer</td>
-                  </tr>
-                  <tr>
-                    <th className="text-start">Email :</th>
-                    <td className="text-end">achmadmauliddin2@gmail.com</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th className="text-start">Full Name :</th>
+                      <td className="text-end">Achmad Mauliddin</td>
+                    </tr>
+                    <tr>
+                      <th className="text-start">Gender :</th>
+                      <td className="text-end">Male</td>
+                    </tr>
+                    <tr>
+                      <th className="text-start">Address :</th>
+                      <td className="text-end">Bogor</td>
+                    </tr>
+                    <tr>
+                      <th className="text-start">Nationality :</th>
+                      <td className="text-end">Indonesia</td>
+                    </tr>
+                    <tr>
+                      <th className="text-start">Religion :</th>
+                      <td className="text-end">Muslim</td>
+                    </tr>
+                    <tr>
+                      <th className="text-start">Occupation :</th>
+                      <td className="text-end">Programmer, Web Developer</td>
+                    </tr>
+                    <tr>
+                      <th className="text-start">Email :</th>
+                      <td className="text-end">achmadmauliddin2@gmail.com</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -96,7 +106,11 @@ export default function AboutMe() {
               </a>
             </div>
           </div>
-          <div className="col-12 col-md-6 d-flex justify-content-center mb-3" data-aos="fade-left" data-aos-duration="2000">
+          <div
+            className="col-12 col-md-6 d-flex justify-content-center mb-3"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <img src={frontEnd} alt="" className="img-fluid" />
           </div>
         </div>

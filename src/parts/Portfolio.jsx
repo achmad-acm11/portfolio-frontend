@@ -35,7 +35,6 @@ export default function Portfolio(props) {
       index += 1;
     }
   }
-
   return (
     <section
       className="portfolio mt-5"
@@ -106,50 +105,46 @@ export default function Portfolio(props) {
                       data-bs-interval="false"
                     >
                       <div className="carousel-inner">
-                        <div className="carousel-item active">
-                          <div className="row">
-                            {wrapperProject.map((item, i) => {
-                              return (
-                                <div
-                                  key={i}
-                                  className={`carousel-item ${
-                                    i === 0 ? "active" : ""
-                                  }`}
-                                >
-                                  <div className="row">
-                                    {item.map((data, index) => {
-                                      return (
-                                        <div
-                                          key={data.id}
-                                          className={`col-${
-                                            item.length === 1 ? "12" : "6"
-                                          } to-project-detail`}
-                                          onClick={() => {
-                                            props.history.push(
-                                              `/project/${data.id}`
-                                            );
-                                          }}
-                                        >
-                                          <div className="image-wrapper text-center">
-                                            <img src={data.main_image} alt="" />
-                                          </div>
-                                          <div className="project-text text-center">
-                                            {data.name}
-                                          </div>
-                                          <div className="label-wrapper text-center">
-                                            <div className="project-label badge rounded-pill">
-                                              Project
-                                            </div>
-                                          </div>
+                        {wrapperProject.map((item, i) => {
+                          return (
+                            <div
+                              key={i}
+                              className={`carousel-item ${
+                                i === 0 ? "active" : ""
+                              }`}
+                            >
+                              <div className="row">
+                                {item.map((data, index) => {
+                                  return (
+                                    <div
+                                      key={data.id}
+                                      className={`col-${
+                                        item.length === 1 ? "12" : "6"
+                                      } to-project-detail`}
+                                      onClick={() => {
+                                        props.history.push(
+                                          `/project/${data.id}`
+                                        );
+                                      }}
+                                    >
+                                      <div className="image-wrapper text-center">
+                                        <img src={data.main_image} alt="" style={{objectFit:"cover"}} />
+                                      </div>
+                                      <div className="project-text text-center">
+                                        {data.name}
+                                      </div>
+                                      <div className="label-wrapper text-center">
+                                        <div className="project-label badge rounded-pill">
+                                          Project
                                         </div>
-                                      );
-                                    })}
-                                  </div>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </div>
+                                      </div>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          );
+                        })}
                       </div>
                       <button
                         className="carousel-control-prev"

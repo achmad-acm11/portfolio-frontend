@@ -98,5 +98,105 @@
           "image": "http://localhost:3000/img/img_bkn_4.png"
         }
       ]
+    },
+    {
+      "id": 3,
+      "name": "Simtoring Kemenlhk",
+      "short_desc": "SIMTORING involves monitoring the status of public systems and internal systems.",
+      "description": "<p>The monitoring system or what is often abbreviated as SIMTORING is a monitoring web for the Public System and Internal System in the Ministry of Environment and Forestry. SIMTORING involves monitoring the status of public systems and internal systems. <br /> The results obtained from SIMTORING in addition to status are also obtained information about types and descriptions of public systems and internal systems. By using SIMTORING, HTTP status can be detected and can minimize duplication in public systems and internal system.</p>",
+      "main_image": "http://localhost:3000/img/main_klhk.png",
+      "client": "KEMENLHK",
+      "long_time": "November 2020 - January 2021",
+      "platform": "Web",
+      "stacks":[
+        {
+          "id": 1,
+          "name": "HTML",
+          "image": "http://localhost:3000/img/Logo_html.png"
+        },
+        {
+          "id": 2,
+          "name": "CSS",
+          "image": "http://localhost:3000/img/Logo_css.png"
+        },
+        {
+          "id": 3,
+          "name": "Javascript",
+          "image": "http://localhost:3000/img/Logo_javascript.png"
+        },
+        {
+          "id": 4,
+          "name": "Laravel",
+          "image": "http://localhost:3000/img/Logo_laravel.png"
+        }
+      ],
+      "images": [
+        {
+          "id":1,
+          "image": "http://localhost:3000/img/klhk1.png"
+        },
+        {
+          "id":2,
+          "image": "http://localhost:3000/img/klhk2.png"
+        },
+        {
+          "id":3,
+          "image": "http://localhost:3000/img/klhk3.png"
+        },
+        {
+          "id":4,
+          "image": "http://localhost:3000/img/klhk4.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Oline Resume",
+      "short_desc": "Online My Resume.",
+      "description": "<p>Online My Resume.</p>",
+      "main_image": "http://localhost:3000/img/main_resume.png",
+      "client": "KEMENLHK",
+      "long_time": "October 2021",
+      "platform": "Web",
+      "stacks":[
+        {
+          "id": 1,
+          "name": "HTML",
+          "image": "http://localhost:3000/img/Logo_html.png"
+        },
+        {
+          "id": 2,
+          "name": "CSS",
+          "image": "http://localhost:3000/img/Logo_css.png"
+        },
+        {
+          "id": 3,
+          "name": "Javascript",
+          "image": "http://localhost:3000/img/Logo_javascript.png"
+        },
+        {
+          "id": 4,
+          "name": "React",
+          "image": "http://localhost:3000/img/Logo_react_js.png"
+        }
+      ],
+      "images": [
+        {
+          "id":1,
+          "image": "http://localhost:3000/img/resume1.png"
+        },
+        {
+          "id":2,
+          "image": "http://localhost:3000/img/resume2.png"
+        },
+        {
+          "id":3,
+          "image": "http://localhost:3000/img/resume3.png"
+        },
+        {
+          "id":4,
+          "image": "http://localhost:3000/img/resume4.png"
+        }
+      ]
     }
 ]

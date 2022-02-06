@@ -20,7 +20,7 @@ export default function PortfolioDetail(props) {
                   >
                     <div className="project-wrapper to-project-detail">
                       <div className="project-image-wrapper text-center">
-                        <img src={item.main_image} alt="" />
+                        <img src={item.main_image} alt="" style={{objectFit:"cover"}}/>
                       </div>
                       <div className="project-text text-center">
                         {item.name}

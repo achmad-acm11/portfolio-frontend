@@ -108,7 +108,7 @@ export default function Skills(props) {
                     style={{ width: "50%", padding: "5px 0" }}
                   >
                     <img
-                      src="http://localhost:3000/img/Logo_PHP.png"
+                      src="/img/Logo_PHP.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -118,7 +118,7 @@ export default function Skills(props) {
                     style={{ width: "30%" }}
                   >
                     <img
-                      src="http://localhost:3000/img/Logo_html.png"
+                      src="/img/Logo_html.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -130,7 +130,7 @@ export default function Skills(props) {
                     style={{ width: "30%" }}
                   >
                     <img
-                      src="http://localhost:3000/img/Logo_nodejs.png"
+                      src="/img/Logo_nodejs.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -140,7 +140,7 @@ export default function Skills(props) {
                     style={{ width: "50%" }}
                   >
                     <img
-                      src="http://localhost:3000/img/Logo_go.png"
+                      src="/img/Logo_go.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -152,7 +152,7 @@ export default function Skills(props) {
                     style={{ width: "50%" }}
                   >
                     <img
-                      src="http://localhost:3000/img/Logo_javascript.png"
+                      src="/img/Logo_javascript.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -161,7 +161,7 @@ export default function Skills(props) {
                     className="skills-wrapper text-center"
                     style={{ width: "30%" }}
                   >
-                    <img src="http://localhost:3000/img/Logo_css.png" alt="" />
+                    <img src="/img/Logo_css.png" alt="" />
                   </div>
                 </div>
               </div>

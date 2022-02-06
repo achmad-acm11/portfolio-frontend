@@ -1,5 +1,6 @@
 import React from "react";
 import frontEnd from "assets/img/frontend.png";
+import cv from "assets/file/CV Achmad Mauliddin.pdf";
 
 export default function AboutMe() {
   return (
@@ -53,12 +54,13 @@ export default function AboutMe() {
                 aria-labelledby="pills-about-tab"
               >
                 I’m a professional web developer based in Jakarta, Indonesia. I
-                have the ability to develop, test, and maintain web-based
-                applications. I have good motivated to always give the best
-                effort for each project I did. <br />
+                have the ability to develop, test, and maintain a web-based
+                application. I have good motivation to always give my best
+                effort on each project I do.
                 <br />
-                Personally, I'm a person to eager to learn and improve, with a
-                passion for creative thingking.
+                <br />
+                Personally, I'm a person eager to learn and improve, with a
+                passion for creative thinking.
               </div>
               <div
                 className="tab-pane fade text-md-start"
@@ -101,7 +103,12 @@ export default function AboutMe() {
               </div>
             </div>
             <div className="button-wrapper text-center">
-              <a href="/" className="btn btn-primary text-white">
+              <a
+                href={cv}
+                target={"_blank"}
+                rel="noreferrer"
+                className="btn btn-primary text-white"
+              >
                 Download CV &nbsp; <i className="uil uil-download-alt"></i>
               </a>
             </div>

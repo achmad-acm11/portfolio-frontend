@@ -8,7 +8,15 @@ export default function PortfolioDetailDesc({ detail }) {
   //   return null;
   // }
   return (
-    <section className="portfolio-detail mt-5" id="portfolio_detail" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-in" data-aos-once="true">
+    <section
+      className="portfolio-detail mt-5"
+      id="portfolio_detail"
+      data-aos="fade-zoom-in"
+      data-aos-delay="200"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in"
+      data-aos-once="true"
+    >
       <div className="container">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb">
@@ -37,13 +45,20 @@ export default function PortfolioDetailDesc({ detail }) {
             </div>
             <div className="col-12">
               <div className="thumbnail-wrapper d-flex justify-content-center flex-nowrap gap-md-5 gap-1">
-                {detail.images !== undefined && detail.images.map((item, index) => {
-                  return (
-                    <div key={item.id} className="thumbnail-item">
-                      <img src={item.image} alt="" className="img-fluid" style={{height:"100px",objectFit:"fill"}} width={"160px"}/>
-                    </div>
-                  );
-                })}
+                {detail.images !== undefined &&
+                  detail.images.map((item, index) => {
+                    return (
+                      <div key={item.id} className="thumbnail-item">
+                        <img
+                          src={item.image}
+                          alt=""
+                          className="img-fluid"
+                          style={{ height: "100px", objectFit: "fill" }}
+                          width={"160px"}
+                        />
+                      </div>
+                    );
+                  })}
               </div>
             </div>
             <div className="col-12 mt-3">
@@ -53,7 +68,8 @@ export default function PortfolioDetailDesc({ detail }) {
                     Short Description
                   </h6>
                   <div className="body-portfolio-detail">
-                    {detail.description !== undefined && parse(detail.description)}
+                    {detail.description !== undefined &&
+                      parse(detail.description)}
                   </div>
                 </div>
                 <div className="col-3">
@@ -85,22 +101,35 @@ export default function PortfolioDetailDesc({ detail }) {
                     <div className="fw-bold header-portfolio-detail">Stack</div>
                     <div className="body-portfolio-detail">
                       <div className="d-flex flex-nowrap gap-1">
-                        {detail.stacks !== undefined && detail.stacks.map((item, index) => {
-                          return (
-                            <div
-                              key={item.id}
-                              className="stack-wrapper-icon p-1"
-                            >
-                              <img
-                                src={item.image}
-                                alt=""
-                                className="img-fluid"
-                              />
-                            </div>
-                          );
-                        })}
+                        {detail.stacks !== undefined &&
+                          detail.stacks.map((item, index) => {
+                            return (
+                              <div
+                                key={item.id}
+                                className="stack-wrapper-icon p-1"
+                              >
+                                <img
+                                  src={item.image}
+                                  alt=""
+                                  className="img-fluid"
+                                />
+                              </div>
+                            );
+                          })}
                       </div>
                     </div>
+                  </div>
+                  <div class="d-grid gap-2 mt-3">
+                    {detail.link !== undefined && (
+                      <a
+                        href={detail.link}
+                        target={"_blank"}
+                        rel="noreferrer"
+                        className="btn btn-primary btn-sm text-white"
+                      >
+                        Visit Website
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

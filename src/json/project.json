@@ -47,7 +47,8 @@
           "id":4,
           "image": "/img/qonstanta4.png"
         }
-      ]
+      ],
+      "link": "https://qonstanta.com/"
     },
     {
       "id": 2,
@@ -197,6 +198,7 @@
           "id":4,
           "image": "/img/resume4.png"
         }
-      ]
+      ],
+      "link": "https://achmad-resume.netlify.app/"
     }
 ]

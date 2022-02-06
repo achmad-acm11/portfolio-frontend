@@ -9,5 +9,5 @@
     "occupation_main": "Programmer",
     "email": "achmadmauliddin2@gmail.com",
     "occupation": "Web Developer",
-    "image": "http://localhost:3000/img/photoProfile.png"
+    "image": "/img/photoProfile.png"
 }

@@ -4,7 +4,7 @@
       "name": "Qonstanta",
       "short_desc": "Qonstanta is an online-based learning system with the concept of Edu Live Class.",
       "description": "<p>Qonstanta is an online-based learning system with the concept of Edu Live Class. Students will be guided online in the form of Live Class, Learning Videos, Question, Teaching Materials and Practice Questions, Tips and Tricks, Student Online Consultations, Student Periodic Reports, Chat Rooms, School and College Info, and Online Try Out. <a target='_blank' href='https://qonstanta.com/'>(Qonstanta)</a></p>",
-      "main_image": "http://localhost:3000/img/main_qonstanta.png",
+      "main_image": "/img/main_qonstanta.png",
       "client": "PT. Rynest Technology Indomedia",
       "long_time": "August 2020 - January 2021",
       "platform": "Web",
@@ -12,40 +12,40 @@
         {
           "id": 1,
           "name": "HTML",
-          "image": "http://localhost:3000/img/Logo_html.png"
+          "image": "/img/Logo_html.png"
         },
         {
           "id": 2,
           "name": "CSS",
-          "image": "http://localhost:3000/img/Logo_css.png"
+          "image": "/img/Logo_css.png"
         },
         {
           "id": 3,
           "name": "Javascript",
-          "image": "http://localhost:3000/img/Logo_javascript.png"
+          "image": "/img/Logo_javascript.png"
         },
         {
           "id": 4,
           "name": "PHP",
-          "image": "http://localhost:3000/img/Logo_PHP.png"
+          "image": "/img/Logo_PHP.png"
         }
       ],
       "images": [
         {
           "id":1,
-          "image": "http://localhost:3000/img/qonstanta1.png"
+          "image": "/img/qonstanta1.png"
         },
         {
           "id":2,
-          "image": "http://localhost:3000/img/qonstanta2.png"
+          "image": "/img/qonstanta2.png"
         },
         {
           "id":3,
-          "image": "http://localhost:3000/img/qonstanta3.png"
+          "image": "/img/qonstanta3.png"
         },
         {
           "id":4,
-          "image": "http://localhost:3000/img/qonstanta4.png"
+          "image": "/img/qonstanta4.png"
         }
       ]
     },
@@ -54,7 +54,7 @@
       "name": "Internsip App",
       "short_desc": "The Internship Application is a program of Badan Kepegawain Negara Information System.",
       "description": "<p>The Internship Application is a program of Badan Kepegawain Negara Information System in providing facilities for students to develop the academic potential that has been learned while at school or on campus with experience working in Badan Kepegawaian Negara (BKN).</p>",
-      "main_image": "http://localhost:3000/img/main_bkn.png",
+      "main_image": "/img/main_bkn.png",
       "client": "National Civil Service Agency (BKN)",
       "long_time": "January 2020 - March 2020",
       "platform": "Web",
@@ -62,40 +62,40 @@
         {
           "id": 1,
           "name": "HTML",
-          "image": "http://localhost:3000/img/Logo_html.png"
+          "image": "/img/Logo_html.png"
         },
         {
           "id": 2,
           "name": "CSS",
-          "image": "http://localhost:3000/img/Logo_css.png"
+          "image": "/img/Logo_css.png"
         },
         {
           "id": 3,
           "name": "Javascript",
-          "image": "http://localhost:3000/img/Logo_javascript.png"
+          "image": "/img/Logo_javascript.png"
         },
         {
           "id": 4,
           "name": "Java",
-          "image": "http://localhost:3000/img/Logo_Java.png"
+          "image": "/img/Logo_Java.png"
         }
       ],
       "images": [
         {
           "id":1,
-          "image": "http://localhost:3000/img/img_bkn_1.png"
+          "image": "/img/img_bkn_1.png"
         },
         {
           "id":2,
-          "image": "http://localhost:3000/img/img_bkn_2.png"
+          "image": "/img/img_bkn_2.png"
         },
         {
           "id":3,
-          "image": "http://localhost:3000/img/img_bkn_3.png"
+          "image": "/img/img_bkn_3.png"
         },
         {
           "id":4,
-          "image": "http://localhost:3000/img/img_bkn_4.png"
+          "image": "/img/img_bkn_4.png"
         }
       ]
     },
@@ -104,7 +104,7 @@
       "name": "Simtoring Kemenlhk",
       "short_desc": "SIMTORING involves monitoring the status of public systems and internal systems.",
       "description": "<p>The monitoring system or what is often abbreviated as SIMTORING is a monitoring web for the Public System and Internal System in the Ministry of Environment and Forestry. SIMTORING involves monitoring the status of public systems and internal systems. <br /> The results obtained from SIMTORING in addition to status are also obtained information about types and descriptions of public systems and internal systems. By using SIMTORING, HTTP status can be detected and can minimize duplication in public systems and internal system.</p>",
-      "main_image": "http://localhost:3000/img/main_klhk.png",
+      "main_image": "/img/main_klhk.png",
       "client": "KEMENLHK",
       "long_time": "November 2020 - January 2021",
       "platform": "Web",
@@ -112,40 +112,40 @@
         {
           "id": 1,
           "name": "HTML",
-          "image": "http://localhost:3000/img/Logo_html.png"
+          "image": "/img/Logo_html.png"
         },
         {
           "id": 2,
           "name": "CSS",
-          "image": "http://localhost:3000/img/Logo_css.png"
+          "image": "/img/Logo_css.png"
         },
         {
           "id": 3,
           "name": "Javascript",
-          "image": "http://localhost:3000/img/Logo_javascript.png"
+          "image": "/img/Logo_javascript.png"
         },
         {
           "id": 4,
           "name": "Laravel",
-          "image": "http://localhost:3000/img/Logo_laravel.png"
+          "image": "/img/Logo_laravel.png"
         }
       ],
       "images": [
         {
           "id":1,
-          "image": "http://localhost:3000/img/klhk1.png"
+          "image": "/img/klhk1.png"
         },
         {
           "id":2,
-          "image": "http://localhost:3000/img/klhk2.png"
+          "image": "/img/klhk2.png"
         },
         {
           "id":3,
-          "image": "http://localhost:3000/img/klhk3.png"
+          "image": "/img/klhk3.png"
         },
         {
           "id":4,
-          "image": "http://localhost:3000/img/klhk4.png"
+          "image": "/img/klhk4.png"
         }
       ]
     },
@@ -154,7 +154,7 @@
       "name": "Oline Resume",
       "short_desc": "Online My Resume.",
       "description": "<p>Online My Resume.</p>",
-      "main_image": "http://localhost:3000/img/main_resume.png",
+      "main_image": "/img/main_resume.png",
       "client": "KEMENLHK",
       "long_time": "October 2021",
       "platform": "Web",
@@ -162,40 +162,40 @@
         {
           "id": 1,
           "name": "HTML",
-          "image": "http://localhost:3000/img/Logo_html.png"
+          "image": "/img/Logo_html.png"
         },
         {
           "id": 2,
           "name": "CSS",
-          "image": "http://localhost:3000/img/Logo_css.png"
+          "image": "/img/Logo_css.png"
         },
         {
           "id": 3,
           "name": "Javascript",
-          "image": "http://localhost:3000/img/Logo_javascript.png"
+          "image": "/img/Logo_javascript.png"
         },
         {
           "id": 4,
           "name": "React",
-          "image": "http://localhost:3000/img/Logo_react_js.png"
+          "image": "/img/Logo_react_js.png"
         }
       ],
       "images": [
         {
           "id":1,
-          "image": "http://localhost:3000/img/resume1.png"
+          "image": "/img/resume1.png"
         },
         {
           "id":2,
-          "image": "http://localhost:3000/img/resume2.png"
+          "image": "/img/resume2.png"
         },
         {
           "id":3,
-          "image": "http://localhost:3000/img/resume3.png"
+          "image": "/img/resume3.png"
         },
         {
           "id":4,
-          "image": "http://localhost:3000/img/resume4.png"
+          "image": "/img/resume4.png"
         }
       ]
     }

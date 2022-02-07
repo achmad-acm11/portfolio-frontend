@@ -118,9 +118,13 @@ export default function Portfolio(props) {
                                   return (
                                     <div
                                       key={data.id}
-                                      className={`col-${
-                                        item.length === 1 ? "12" : "6"
-                                      } to-project-detail`}
+                                      className={[
+                                        item.length === 1
+                                          ? "col-md-12"
+                                          : "col-md-6",
+                                        "col-12",
+                                        `to-project-detail`,
+                                      ].join(" ")}
                                       onClick={() => {
                                         props.history.push(
                                           `/project/${data.id}`
@@ -128,7 +132,11 @@ export default function Portfolio(props) {
                                       }}
                                     >
                                       <div className="image-wrapper text-center">
-                                        <img src={data.main_image} alt="" style={{objectFit:"cover"}} />
+                                        <img
+                                          src={data.main_image}
+                                          alt=""
+                                          style={{ objectFit: "cover" }}
+                                        />
                                       </div>
                                       <div className="project-text text-center">
                                         {data.name}
@@ -198,9 +206,13 @@ export default function Portfolio(props) {
                                   return (
                                     <div
                                       key={data.id}
-                                      className={`col-${
-                                        item.length === 1 ? "12" : "6"
-                                      } to-project-detail`}
+                                      className={[
+                                        item.length === 1
+                                          ? "col-md-12"
+                                          : "col-md-6",
+                                        "col-12",
+                                        `to-project-detail`,
+                                      ].join(" ")}
                                       onClick={() => {
                                         props.history.push(
                                           `/case_study/${data.id}`

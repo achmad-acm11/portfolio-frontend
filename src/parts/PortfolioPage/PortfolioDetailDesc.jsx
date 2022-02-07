@@ -63,7 +63,7 @@ export default function PortfolioDetailDesc({ detail }) {
             </div>
             <div className="col-12 mt-3">
               <div className="row justify-content-center">
-                <div className="col-7">
+                <div className="col-12 col-md-7">
                   <h6 className="fw-bold header-portfolio-detail">
                     Short Description
                   </h6>
@@ -72,7 +72,7 @@ export default function PortfolioDetailDesc({ detail }) {
                       parse(detail.description)}
                   </div>
                 </div>
-                <div className="col-3">
+                <div className="col-12 col-md-3">
                   <div className="client-wrapper">
                     <div className="fw-bold header-portfolio-detail">
                       Company/Client

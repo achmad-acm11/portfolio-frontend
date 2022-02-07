@@ -54,7 +54,7 @@ export default function Portfolio(props) {
           </div>
           <div className="card-body">
             <div className="row">
-              <div className="col-12 col-md-2">
+              <div className="col-12 col-lg-2">
                 <ul
                   className="nav mb-3 justify-content-start flex-md-column gap-4"
                   id="pills-tab"
@@ -90,7 +90,7 @@ export default function Portfolio(props) {
                   </li>
                 </ul>
               </div>
-              <div className="col-12 col-md-10">
+              <div className="col-12 col-lg-10">
                 <div className="tab-content mb-3" id="pills-tabContent">
                   <div
                     className="tab-pane fade show active text-center text-md-start"
@@ -118,9 +118,13 @@ export default function Portfolio(props) {
                                   return (
                                     <div
                                       key={data.id}
-                                      className={`col-${
-                                        item.length === 1 ? "12" : "6"
-                                      } to-project-detail`}
+                                      className={[
+                                        item.length === 1
+                                          ? "col-lg-12"
+                                          : "col-lg-6",
+                                        "col-12",
+                                        `to-project-detail`,
+                                      ].join(" ")}
                                       onClick={() => {
                                         props.history.push(
                                           `/project/${data.id}`
@@ -128,7 +132,11 @@ export default function Portfolio(props) {
                                       }}
                                     >
                                       <div className="image-wrapper text-center">
-                                        <img src={data.main_image} alt="" style={{objectFit:"cover"}} />
+                                        <img
+                                          src={data.main_image}
+                                          alt=""
+                                          style={{ objectFit: "cover" }}
+                                        />
                                       </div>
                                       <div className="project-text text-center">
                                         {data.name}
@@ -198,9 +206,13 @@ export default function Portfolio(props) {
                                   return (
                                     <div
                                       key={data.id}
-                                      className={`col-${
-                                        item.length === 1 ? "12" : "6"
-                                      } to-project-detail`}
+                                      className={[
+                                        item.length === 1
+                                          ? "col-lg-12"
+                                          : "col-lg-6",
+                                        "col-12",
+                                        `to-project-detail`,
+                                      ].join(" ")}
                                       onClick={() => {
                                         props.history.push(
                                           `/case_study/${data.id}`

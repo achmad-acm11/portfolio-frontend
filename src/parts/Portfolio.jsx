@@ -54,7 +54,7 @@ export default function Portfolio(props) {
           </div>
           <div className="card-body">
             <div className="row">
-              <div className="col-12 col-md-2">
+              <div className="col-12 col-lg-2">
                 <ul
                   className="nav mb-3 justify-content-start flex-md-column gap-4"
                   id="pills-tab"
@@ -90,7 +90,7 @@ export default function Portfolio(props) {
                   </li>
                 </ul>
               </div>
-              <div className="col-12 col-md-10">
+              <div className="col-12 col-lg-10">
                 <div className="tab-content mb-3" id="pills-tabContent">
                   <div
                     className="tab-pane fade show active text-center text-md-start"
@@ -120,8 +120,8 @@ export default function Portfolio(props) {
                                       key={data.id}
                                       className={[
                                         item.length === 1
-                                          ? "col-md-12"
-                                          : "col-md-6",
+                                          ? "col-lg-12"
+                                          : "col-lg-6",
                                         "col-12",
                                         `to-project-detail`,
                                       ].join(" ")}
@@ -208,8 +208,8 @@ export default function Portfolio(props) {
                                       key={data.id}
                                       className={[
                                         item.length === 1
-                                          ? "col-md-12"
-                                          : "col-md-6",
+                                          ? "col-lg-12"
+                                          : "col-lg-6",
                                         "col-12",
                                         `to-project-detail`,
                                       ].join(" ")}

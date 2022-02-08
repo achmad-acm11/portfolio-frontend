@@ -19,7 +19,7 @@ export default function AboutMe(props) {
           <div className="col-12 col-md-6 mb-3">
             <h5 className="text-uppercase mb-4 fw-bold">about me</h5>
             <div className="text-center text-md-start">
-              I’m a professional web developer based in Jakarta, Indonesia. I
+              I’m a professional web developer based in Bogor, Indonesia. I
               have the ability to develop, test, and maintain a web-based
               application. I have good motivation to always give my best effort
               on each project I do.

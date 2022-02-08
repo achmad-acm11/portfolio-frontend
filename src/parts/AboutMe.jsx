@@ -53,7 +53,7 @@ export default function AboutMe() {
                 role="tabpanel"
                 aria-labelledby="pills-about-tab"
               >
-                I’m a professional web developer based in Jakarta, Indonesia. I
+                I’m a professional web developer based in Bogor, Indonesia. I
                 have the ability to develop, test, and maintain a web-based
                 application. I have good motivation to always give my best
                 effort on each project I do.

@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import APIProject from "services/Project";
+import APIStudyCase from "services/Study_case";
 
 export default function PortfolioDetail(props) {
-  const { study_case, project } = props;
+  const [case_study, setCaseStudy] = useState([]);
+  const [project, setProject] = useState([]);
+
+  const handleState = useCallback(async() => {
+    let data = await APIStudyCase.getStudyCase();
+    setCaseStudy(data);
+    data = await APIProject.getProject();
+    setProject(data);
+  }, [setCaseStudy,setProject]);
+  
+  useEffect(() => {
+    handleState()
+  }, [handleState]);
+  
+  if (case_study.length === 0 || project.length === 0) {
+    return null;
+  }
   return (
     <section className="portfolio-list mt-5" id="portfolio_list" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000" data-aos-easing="ease-in" data-aos-once="true">
       <div className="container">
@@ -37,7 +55,7 @@ export default function PortfolioDetail(props) {
           <div className="col-12 mb-3">
             <h6 className="fw-bold header-portfolio-list mb-4">Case Study</h6>
             <div className="row justify-content-center to-project-detail">
-              {study_case.map((item, index) => {
+              {case_study.map((item, index) => {
                 return (
                   <div key={item.id} className="col-md-3 col-12" onClick={() => props.history.push(`/case_study/${item.id}`)}>
                     <div className="project-wrapper">

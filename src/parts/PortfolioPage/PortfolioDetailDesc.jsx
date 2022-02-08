@@ -119,7 +119,7 @@ export default function PortfolioDetailDesc({ detail }) {
                       </div>
                     </div>
                   </div>
-                  <div class="d-grid gap-2 mt-3">
+                  <div className="d-grid gap-2 mt-3">
                     {detail.link !== undefined && (
                       <a
                         href={detail.link}

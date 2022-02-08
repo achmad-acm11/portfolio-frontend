@@ -3,26 +3,24 @@ import Header from "parts/Header";
 import Hero from "parts/Hero";
 import SkillsDetail from "parts/SkillsPage/SkillsDetail";
 import React, { Component } from "react";
-// import APIProfile from "services/Profile";
+import APIProfile from "services/Profile";
 // import APISkills from "services/Skills";
-// import APISocialMedia from "services/Social_media";
+import APISocialMedia from "services/Social_media";
 import AOS from 'aos';
-import profileJson from 'json/profile.json';
-import socialMediaJson from 'json/social_media.json';
-import skillsJson from 'json/skills.json';
+// import profileJson from 'json/profile.json';
+// import socialMediaJson from 'json/social_media.json';
+// import skillsJson from 'json/skills.json';
 
 export default class SkillsPage extends Component {
   state = {
     profile: {},
     social: {},
-    skills: {},
   };
   componentDidMount() {
     window.scrollTo(0,0);
     document.title = "Achmad Mauliddin - Skills";
     this.profileData();
     this.socialData();
-    this.skillsData();
     AOS.init({
       duration: 600,
       easing: "ease-in-sine",
@@ -37,42 +35,24 @@ export default class SkillsPage extends Component {
   }
 
   profileData = async () => {
-    // const profile = await APIProfile.getProfile();
-    // this.setState({
-    //   profile: profile[0],
-    // });
+    const profile = await APIProfile.getProfile();
     this.setState({
-      profile: profileJson
-    })
+      profile: profile[0],
+    });
   };
   socialData = async () => {
-    // const social = await APISocialMedia.getSocialMedia();
-    // this.setState({
-    //   ...this.state,
-    //   social: social,
-    // });
+    const social = await APISocialMedia.getSocialMedia();
     this.setState({
-      social: socialMediaJson
-    })
-  };
-
-  skillsData = () => {
-    // APISkills.getSkills().then((res) =>
-    //   this.setState({
-    //     ...this.state,
-    //     skills: res,
-    //   })
-    // );
-    this.setState({
-      skills: skillsJson
-    })
+      ...this.state,
+      social: social,
+    });
   };
   render() {
     return (
       <>
         <Header {...this.props} profile={this.state.profile} />
         <Hero profile={this.state.profile} social={this.state.social} />
-        <SkillsDetail skills={this.state.skills} />
+        <SkillsDetail />
         <Footer />
       </>
     );

@@ -3,13 +3,13 @@ import Header from "parts/Header";
 import Hero from "parts/Hero";
 import PortfolioDetailDesc from "parts/PortfolioPage/PortfolioDetailDesc";
 import React, { Component } from "react";
-// import APIProfile from "services/Profile";
+import APIProfile from "services/Profile";
 import APIProject from "services/Project";
-// import APISocialMedia from "services/Social_media";
+import APISocialMedia from "services/Social_media";
 import AOS from "aos";
 import APIStudyCase from "services/Study_case";
-import profileJson from "json/profile.json";
-import socialMediaJson from "json/social_media.json";
+// import profileJson from "json/profile.json";
+// import socialMediaJson from "json/social_media.json";
 
 export default class ProjectDetailPage extends Component {
   state = {
@@ -30,34 +30,28 @@ export default class ProjectDetailPage extends Component {
     });
   }
   profileData = async () => {
-    // const profile = await APIProfile.getProfile();
-    // this.setState({
-    //   ...this.state,
-    //   profile: profile[0],
-    // });
+    const profile = await APIProfile.getProfile();
     this.setState({
-      profile: profileJson,
+      ...this.state,
+      profile: profile[0],
     });
   };
   socialData = async () => {
-    // const social = await APISocialMedia.getSocialMedia();
-    // this.setState({
-    //   ...this.state,
-    //   social: social,
-    // });
+    const social = await APISocialMedia.getSocialMedia();
     this.setState({
-      social: socialMediaJson,
+      ...this.state,
+      social: social,
     });
   };
   detailData = () => {
     if (this.props.match.params.id === undefined) {
     } else {
-      (() => {
+      (async() => {
         try {
           const project =
             this.props.match.params.type === "project"
-              ? APIProject.getDetailProject(this.props.match.params.id)
-              : APIStudyCase.getStudyCaseDetail(
+              ? await APIProject.getDetailProject(this.props.match.params.id)
+              : await APIStudyCase.getStudyCaseDetail(
                   this.props.match.params.id
                 );
             

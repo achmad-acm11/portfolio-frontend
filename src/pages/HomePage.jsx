@@ -11,31 +11,26 @@ import Footer from "parts/Footer";
 // import APIStudyCase from "services/Study_case";
 // import APIProject from "services/Project";
 import AOS from "aos";
-import profileJson from "json/profile.json";
-import socialMediaJson from "json/social_media.json";
-import qualificationJson from "json/qualification.json";
-import caseStudyJson from "json/case_study.json";
-import projectJson from "json/project.json";
+// import profileJson from "json/profile.json";
+// import socialMediaJson from "json/social_media.json";
+// import qualificationJson from "json/qualification.json";
+// import caseStudyJson from "json/case_study.json";
+// import projectJson from "json/project.json";
 
 import "aos/dist/aos.css";
+import APIProfile from "services/Profile";
+import APISocialMedia from "services/Social_media";
 
 export default class HomePage extends Component {
   state = {
     profile: {},
     social: {},
-    qualification: [],
-    skills: [],
-    project: [],
-    study_case: [],
   };
   componentDidMount() {
     window.scrollTo(0, 0);
     document.title = "Achmad Mauliddin - Home";
     this.profileData();
     this.socialData();
-    this.qualificationData();
-    this.studyCase();
-    this.project();
     AOS.init({
       duration: 600,
       easing: "ease-in-sine",
@@ -44,61 +39,18 @@ export default class HomePage extends Component {
     });
   }
   profileData = async () => {
-    // const profile = await APIProfile.getProfile();
-    // this.setState({
-    //   profile: profile[0],
-    // });
+    const profile = await APIProfile.getProfile();
     this.setState({
-      profile: profileJson,
+      profile: profile[0],
     });
   };
   socialData = async () => {
-    // const social = await APISocialMedia.getSocialMedia();
-    // this.setState({
-    //   ...this.state,
-    //   social: social,
-    // });
+    const social = await APISocialMedia.getSocialMedia();
     this.setState({
-      social: socialMediaJson,
+      ...this.state,
+      social: social,
     });
   };
-  qualificationData = async () => {
-    // const qualification = await APIQualification.getQualification();
-    // this.setState({
-    //   ...this.state,
-    //   qualification,
-    // });
-    this.setState({
-      qualification: qualificationJson,
-    });
-  };
-  studyCase = async () => {
-    // const study_case = await APIStudyCase.getStudyCase();
-    // this.setState({
-    //   ...this.state,
-    //   study_case,
-    // });
-    this.setState({
-      study_case: caseStudyJson,
-    });
-  };
-  project = async () => {
-    // const project = await APIProject.getProject();
-    // this.setState({
-    //   ...this.state,
-    //   project,
-    // });
-    this.setState({
-      project: projectJson,
-    });
-  };
-  // skillsData = async () => {
-  //   const skills = await APISkills.getSkills();
-  //   this.setState({
-  //     ...this.state,
-  //     skills,
-  //   });
-  // };
   render() {
     // Handle if onject state empty
     if (Object.keys(this.state.profile).length === 0) {
@@ -110,12 +62,8 @@ export default class HomePage extends Component {
         <Header {...this.props} profile={this.state.profile} />
         <Hero profile={this.state.profile} social={this.state.social} />
         <AboutMe />
-        <Skills qualification={this.state.qualification} />
-        <Portfolio
-          {...this.props}
-          project={this.state.project}
-          study_case={this.state.study_case}
-        />
+        <Skills />
+        <Portfolio {...this.props} />
         <Footer />
       </>
     );

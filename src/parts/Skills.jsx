@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import completeIcon from "assets/img/icon/Complete Icon.svg";
 import clockIcon from "assets/img/icon/coolicon.svg";
 import { Link } from "react-router-dom";
+// import useAsync from "helpers/hooks/useAsync";
+// import fetch from "helpers/fetch";
+import APIQualification from "services/Qualification";
 // import APIQualification from "services/Qualification";
 // import APIQualification from "services/Qualification";
 
@@ -22,11 +25,43 @@ export default function Skills(props) {
   // };
   // handleState(Qualification);
 
+  // Simple
+  const [qualification, setQualification] = useState(null);
+
+  const handleState = useCallback(async () => {
+    let data = await APIQualification.getQualification();
+    setQualification(data);
+  }, [setQualification]);
+  
+
+  useEffect(() => {
+    // setSkill(skillData())
+    handleState();
+  }, [handleState]);
+
+  // Complexity
+  // const { data, run } = useAsync();
+
+  // useEffect(() => {
+  //   console.log("tes");
+  //   run(fetch({ url: "Skills" }));
+  // }, [run]);
+
+  // console.log(data);
+  if (qualification === null) {
+    return null;
+  }
   return (
     <section className="skills mt-5" id="skills">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-12 col-lg-8 mb-3 qualification-side" data-aos="fade-down"  data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-once="true">
+          <div
+            className="col-12 col-lg-8 mb-3 qualification-side"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-once="true"
+          >
             <div className="card">
               <div className="card-header">
                 <h5 className="text-uppercase m-0">Qualification</h5>
@@ -38,7 +73,7 @@ export default function Skills(props) {
                 <div className="table-responsive">
                   <table className="table table-borderless">
                     <tbody>
-                      {props.qualification.map((item, index) => {
+                      {qualification.map((item, index) => {
                         return (
                           <tr key={item.id}>
                             <th>0{index + 1}</th>
@@ -93,7 +128,13 @@ export default function Skills(props) {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-4 skills-side" data-aos="fade-down"  data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-once="true">
+          <div
+            className="col-12 col-lg-4 skills-side"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-once="true"
+          >
             <div className="card">
               <div className="card-header">
                 <h5 className="text-uppercase m-0">Skills</h5>
@@ -107,11 +148,7 @@ export default function Skills(props) {
                     className="skills-wrapper text-center"
                     style={{ width: "50%", padding: "5px 0" }}
                   >
-                    <img
-                      src="/img/Logo_PHP.png"
-                      alt=""
-                      className="img-fluid"
-                    />
+                    <img src="/img/Logo_PHP.png" alt="" className="img-fluid" />
                   </div>
                   <div
                     className="skills-wrapper text-center"
@@ -139,11 +176,7 @@ export default function Skills(props) {
                     className="skills-wrapper text-center"
                     style={{ width: "50%" }}
                   >
-                    <img
-                      src="/img/Logo_go.png"
-                      alt=""
-                      className="img-fluid"
-                    />
+                    <img src="/img/Logo_go.png" alt="" className="img-fluid" />
                   </div>
                 </div>
                 <div className="d-flex justify-content-evenly mb-3">

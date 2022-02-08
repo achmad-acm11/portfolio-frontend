@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import APISkills from "services/Skills";
 
-export default function SkillsDetail({ skills }) {
-  if (skills.frontend === undefined) {
+export default function SkillsDetail() {
+  const [skills, setSkill] = useState({});
+
+  const handleState = useCallback(async() => {
+    const data = await APISkills.getSkills();
+    setSkill(data);
+  }, [setSkill]);
+  
+  useEffect(() => {
+    handleState()
+  }, [handleState]);
+  
+  if (!skills.hasOwnProperty("frontend")) {
     return null;
   }
 

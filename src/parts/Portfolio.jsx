@@ -1,39 +1,68 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import APIProject from "services/Project";
+import APIStudyCase from "services/Study_case";
 
 export default function Portfolio(props) {
-  const { study_case, project } = props;
-  const wrapperStudyCase = [];
-  const wrapperProject = [];
-  if (study_case.length !== 0) {
-    for (let index = 0; index < study_case.length; index++) {
-      const w = [];
-      if (index % 2 === 0) {
-        w.push(study_case[index]);
-        if (study_case[index + 1] !== undefined) {
-          w.push(study_case[index + 1]);
+  // const { study_case, project } = props;
+  // const wrapperStudyCase = [];
+  // const wrapperProject = [];
+
+  const [wrapperStudyCase, setWrapperStudyCase] = useState([]);
+  const [wrapperProject, setWrapperProject] = useState([]);
+
+  const handleState = useCallback(async () => {
+    const case_study = await APIStudyCase.getStudyCase();
+    const project = await APIProject.getProject();
+    setWrapperStudyCase(mapCaseStudy(case_study));
+    setWrapperProject(mapProject(project));
+  }, [setWrapperProject, setWrapperStudyCase]);
+
+  useEffect(() => {
+    handleState();
+  }, [handleState]);
+
+  const mapCaseStudy = (data) => {
+    const wrapper = [];
+    if (data.length !== 0) {
+      for (let index = 0; index < data.length; index++) {
+        const w = [];
+        if (index % 2 === 0) {
+          w.push(data[index]);
+          if (data[index + 1] !== undefined) {
+            w.push(data[index + 1]);
+          }
         }
-      }
-      if (w.length > 0) {
-        wrapperStudyCase.push(w);
-      }
-      index += 1;
-    }
-  }
-  if (project.length !== 0) {
-    for (let index = 0; index < project.length; index++) {
-      const w = [];
-      if (index % 2 === 0) {
-        w.push(project[index]);
-        if (project[index + 1] !== undefined) {
-          w.push(project[index + 1]);
+        if (w.length > 0) {
+          wrapper.push(w);
         }
+        index += 1;
       }
-      if (w.length > 0) {
-        wrapperProject.push(w);
-      }
-      index += 1;
     }
+    return wrapper;
+  };
+
+  const mapProject = (data) => {
+    const wrapper = [];
+    if (data.length !== 0) {
+      for (let index = 0; index < data.length; index++) {
+        const w = [];
+        if (index % 2 === 0) {
+          w.push(data[index]);
+          if (data[index + 1] !== undefined) {
+            w.push(data[index + 1]);
+          }
+        }
+        if (w.length > 0) {
+          wrapper.push(w);
+        }
+        index += 1;
+      }
+    }
+    return wrapper;
+  };
+  if (wrapperStudyCase.length === 0 || wrapperProject.length === 0) {
+    return null;
   }
   return (
     <section

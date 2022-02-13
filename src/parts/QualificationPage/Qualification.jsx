@@ -51,7 +51,7 @@ export default function Qualification(props) {
                   </div>
                   <div className="lern-wrapper">
                     <div className="header-qualification-detail">
-                      What I Lern
+                      What I Learn
                     </div>
                     <div className="body-qualification-detail">
                       <div className="d-flex flex-nowrap gap-1">

@@ -53,7 +53,7 @@ export default function AboutMe() {
                 role="tabpanel"
                 aria-labelledby="pills-about-tab"
               >
-                I’m a professional web developer based in Bogor, Indonesia. I
+                I’m a professional full stack developer based in Bogor, Indonesia. I
                 have the ability to develop, test, and maintain a web-based
                 application. I have good motivation to always give my best
                 effort on each project I do.
@@ -92,7 +92,7 @@ export default function AboutMe() {
                     </tr>
                     <tr>
                       <th className="text-start">Occupation :</th>
-                      <td className="text-end">Programmer, Web Developer</td>
+                      <td className="text-end">Programmer, Full Stack Developer</td>
                     </tr>
                     <tr>
                       <th className="text-start">Email :</th>

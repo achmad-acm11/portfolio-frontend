@@ -71,7 +71,7 @@ export default function Qualification() {
                   </div>
                 </div>
                 <div className="lern-wrapper">
-                  <div className="header-qualification-detail">What I Lern</div>
+                  <div className="header-qualification-detail">What I Learn</div>
                   <div className="body-qualification-detail">
                     <div className="d-flex flex-nowrap gap-1">
                       {item.lern.map((lernItem, index) => {

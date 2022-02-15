@@ -15,7 +15,7 @@ export default function PortfolioDetail(props) {
                 return (
                   <div
                     key={item.id}
-                    className="col-md-3 col-12"
+                    className="col-lg-3 col-12"
                     onClick={() => props.history.push(`/project/${item.id}`)}
                   >
                     <div className="project-wrapper to-project-detail">
@@ -39,7 +39,7 @@ export default function PortfolioDetail(props) {
             <div className="row justify-content-center to-project-detail">
               {study_case.map((item, index) => {
                 return (
-                  <div key={item.id} className="col-md-3 col-12" onClick={() => props.history.push(`/case_study/${item.id}`)}>
+                  <div key={item.id} className="col-lg-3 col-12" onClick={() => props.history.push(`/case_study/${item.id}`)}>
                     <div className="project-wrapper">
                       <div className="project-image-wrapper text-center">
                         <img

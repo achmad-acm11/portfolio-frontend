@@ -154,10 +154,10 @@
       "id": 4,
       "name": "Oline Resume",
       "short_desc": "Online My Resume.",
-      "description": "<p>Online My Resume.</p>",
+      "description": "<p>Online resume here, is my personal online resume containing personal data, work experience, skills, portfolio and so on.</p>",
       "main_image": "/img/main_resume.png",
-      "client": "KEMENLHK",
-      "long_time": "October 2021",
+      "client": "-",
+      "long_time": "-",
       "platform": "Web",
       "stacks":[
         {
@@ -198,7 +198,6 @@
           "id":4,
           "image": "/img/resume4.png"
         }
-      ],
-      "link": "https://achmad-resume.netlify.app/"
+      ]
     }
 ]
